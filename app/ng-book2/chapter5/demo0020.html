@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="chp5.demo02">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple test</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo0020.js"></script>
+</head>
+<body>
+<p>P16，内置指令ng-click，可以将按钮、链接等其他任何DOM元素同点击事件进行绑定</p>
+<div ng-controller="FirstController">
+<h4>The simplest adding machine ever</h4>
+    <button ng-click="add(1)" class="button">Add</button>
+    <a ng-click="subtract(1)" class="button alert">Subtract</a>
+<h4>Current count:{{counter}}</h4>
+</div>
+</body>
+</html>

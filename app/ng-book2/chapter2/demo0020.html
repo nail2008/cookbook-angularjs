@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple test</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+
+
+<div ng-controller="MyController">
+<h5>{{clock}}</h5>
+</div>
+<script>
+    function MyController($scope,$timeout){
+        var updateClock = function(){
+            $scope.clock = new Date();
+            $timeout(function(){
+                updateClock();
+            },1000);
+        }
+        updateClock();
+    }
+
+</script>
+
+</body>
+</html>
