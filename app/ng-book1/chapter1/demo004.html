@@ -1,10 +1,19 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="ngb1.chp1.demo4">
 <head>
     <script src="../../bower_components/angular/angular.js"></script>
-
+    <script src="demo004.js"></script>
+    <title>Your Shopping Cart</title>
 </head>
-<body>
-<p>1 + 2 = {{ 1 + 2 }}</p>
+<body ng-controller="CartController">
+    <h1>P6 Your Order</h1>
+<div ng-repeat="item in items">
+    <span>{{ item.title }}</span>
+    <input ng-model="item.quantity"/>
+    <!--angular有一种内置过滤器，用来转换文本的格式，比如currency就可以实现美元格式化。-->
+    <span>{{ item.price|currency }}</span>
+    <span>{{ item.price * item.quantity|currency }}</span>
+    <button ng-click="remove($index)">Remove</button>
+</div>
 </body>
 </html>
