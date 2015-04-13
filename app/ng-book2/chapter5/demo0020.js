@@ -2,7 +2,7 @@
  * Created by Administrator on 2015/4/12.
  */
 
-var app = angular.module('chp5.demo02', []);
+var app = angular.module('ngb2.chp5.demo02', []);
 app.controller('FirstController', function ($scope) {
     $scope.counter = 0;
     $scope.add = function (amount) {
