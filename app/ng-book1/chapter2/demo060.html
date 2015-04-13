@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo6">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo060.js"></script>
+    <title>Chapter2 AngularJS应用骨架</title>
+</head>
+<body>
+P24 隐藏和显示
+<br/>
+
+<div ng-controller="MyController">
+    <button ng-click="toggleMenu()">Toggle Menu</button>
+    <ul ng-show="menuState.show">
+        <li>AAAA</li>
+        <li>BBBB</li>
+        <li>CCCC</li>
+    </ul>
+</div>
+</body>
+</html>

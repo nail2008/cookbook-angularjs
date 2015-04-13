@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo8">
+<head>
+
+    <title>Chapter2 AngularJS应用骨架</title>
+    <style type="text/css">
+        .error{
+            background-color: red;
+        }
+        .warning{
+            background-color: yellow;
+        }
+    </style>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo080.js"></script>
+</head>
+<body>
+P25 CSS类和样式,这是个好例子，使用ng-class指令
+<br/>
+<div ng-controller="MyController">
+    <div ng-class="{error:isError,warning:isWarning}">{{ messageText }}</div>
+    <button ng-click="showError()">Error</button>
+    <button ng-click="showWarning()">Warning</button>
+</div>
+</body>
+</html>

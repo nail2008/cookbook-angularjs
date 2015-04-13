@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo7">
+<head>
+
+    <title>Chapter2 AngularJS应用骨架</title>
+    <style type="text/css">
+        .menu-disabled-true{
+            color:gray;
+        }
+    </style>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo070.js"></script>
+</head>
+<body>
+P25 CSS类和样式,这是一个坏的例子
+<br/>
+<div ng-controller="MyController">
+    <button ng-click="toggleMenu()">Toggle Menu</button>
+    <ul ng-show="menuState.show">
+        <!--这样用class不好-->
+        <li class="menu-disabled-{{ isDisabled }}" ng-click="stun()">Stun</li>
+        <!--这样就更不对了-->
+        <li style="{{ expr }}">BBBB</li>
+        <li>CCCC</li>
+    </ul>
+</div>
+</body>
+</html>

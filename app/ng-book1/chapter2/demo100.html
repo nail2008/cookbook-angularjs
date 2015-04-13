@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo10">
+<head>
+    <title>Chapter2 AngularJS应用骨架</title>
+    <style type="text/css">
+        .selected{
+            background-color: lightgreen;
+        }
+    </style>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo100.js"></script>
+</head>
+<body ng-controller="MyController">
+P27 反思src和href属性，使用ng-src、ng-href指令来替代它们
+<br/>
+<p>HTML原生标签，好像都是可以用的呀，没看出区别来</p>
+<img src="../../img/{{ fileName }}"/>
+<a href="https://www.baidu.com/s?ie=utf-8&wd={{ word }}">搜索一下</a>
+
+<p>ng指令</p>
+<img ng-src="../../img/{{ fileName }}"/>
+<a ng-href="https://www.baidu.com/s?ie=utf-8&wd={{ word }}">搜索一下</a>
+</body>
+</html>

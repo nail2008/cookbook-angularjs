@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo9">
+<head>
+    <title>Chapter2 AngularJS应用骨架</title>
+    <style type="text/css">
+        .selected{
+            background-color: lightgreen;
+        }
+    </style>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo090.js"></script>
+</head>
+<body>
+P27 CSS类和样式,这也是个好例子，使用ng-class指令加亮选中行
+<br/>
+<table ng-controller="StudentListController">
+    <tr ng-repeat="student in students" ng-click="selectStudent($index)" ng-class="{selected:$index==selectedRow}">
+        <td>{{ $index+1 }}</td>
+        <td>{{ student.name }}</td>
+    </tr>
+</table>
+</body>
+</html>

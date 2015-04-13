@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo5">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo050.js"></script>
+    <title>Chapter2 AngularJS应用骨架</title>
+</head>
+<body>
+P22 列表、表格、迭代行元素
+<br/>
+<ul ng-controller="StudentListController">
+    <li ng-repeat="student in students">
+        <a href="/student/view/{{ student.id }}">{{ student.name }}</a>
+    </li>
+    <button ng-click="insertTom()">Insert</button>
+</ul>
+
+<table ng-controller="StudentListController">
+    <tr ng-repeat="student in students">
+        <td>{{ $index+1 }}</td>
+        <td>{{ student.name }}</td>
+    </tr>
+</table>
+</body>
+</html>

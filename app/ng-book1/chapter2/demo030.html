@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo3">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo030.js"></script>
+    <title>Hello Angular</title>
+</head>
+<body>
+P17 采用$watch函数重写,watch的是值的变化，而不是ng-change控件的行为，理念上不一样。
+<br/>
+<form ng-controller="StartUpController">
+    Starting:<input ng-model="funding.startingEstimate">
+    Recommendation:{{ funding.needed }}
+</form>
+
+</body>
+</html>
