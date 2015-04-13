@@ -2,7 +2,7 @@
  * Created by Neil on 2015-4-13.
  */
 var app = angular.module('ngb1.chp1.demo4',[]);
-function CartController($scope) {
+app.controller('CartController',function($scope) {
     $scope.items = [
         {title:'Paint pots',quantity:8,price:3.95},
         {title:'Polka dots',quantity:17,price:12.95},
@@ -11,5 +11,5 @@ function CartController($scope) {
     $scope.remove = function (index) {
         $scope.items.splice(index, 1);
     }
-}
+});
 
