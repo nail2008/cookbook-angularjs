@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo15">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo150.js"></script>
+    <title>Chapter2 AngularJS应用骨架</title>
+</head>
+<body ng-controller="MyController">
+<h1>P39 使用过滤器格式化数据</h1>
+
+<p>过滤器的语法： { { expression | filterName : parameter1 : ...parameterN } }</p>
+
+<p>例1：货币 { { 12.9 | currency } } </p>
+
+{{ 12.9|currency }}
+
+<p>例2：保留整数的人民币(书上的写法是错的) { { 12.9 | number : 0 | currency : '￥' } } </p>
+
+{{ 12.9 | number : 0 | currency : '￥' }}
+
+<p>例3：全部大写 { { 'behold the majesty of your page title' | uppercase } }</p>
+{{ 'behold the majesty of your page title' | uppercase }}
+</body>
+</html>
