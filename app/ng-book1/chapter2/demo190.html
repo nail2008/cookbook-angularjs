@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo19">
+<head>
+    <meta charset="utf-8">
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo190.js"></script>
+    <title>Chapter2 AngularJS应用骨架</title>
+</head>
+<body ng-controller="MyController">
+<h1>P45 使用指令修改DOM directive()函数</h1>
+<button ng-click="clickUnfocused()">
+    Not focused
+</button>
+<button ngbk-focus ng-click="clickFocused()">
+    I'm very focused!
+</button>
+<div>{{ message.text }}</div>
+
+</body>
+</html>

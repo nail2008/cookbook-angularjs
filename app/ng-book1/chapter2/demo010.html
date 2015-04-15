@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo1">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo010.js"></script>
+    <title>Hello Angular</title>
+</head>
+<body>
+P16 显示文本<br/>
+ng-bind指令绑定数据的两种等价形式：<br/>
+<div ng-controller="MyController">
+    第一种：使用花括号 <![CDATA[{{ }}]]><br/>
+    <p>{{ greeting }}</p>
+    第二种：使用ng-bind属性
+    <p ng-bind="greeting"></p>
+</div>
+
+</body>
+</html>

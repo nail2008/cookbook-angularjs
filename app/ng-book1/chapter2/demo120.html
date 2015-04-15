@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo12">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo120.js"></script>
+    <title>Your Shopping Cart</title>
+</head>
+<body ng-controller="CartController">
+<h1>P30 用$watch监控数据模型的变化（一） 监控totalCart</h1>
+
+<div ng-repeat="item in items">
+    <span>{{ item.title }}</span>
+    <input ng-model="item.quantity"/>
+    <span>{{ item.price|currency }}</span>
+    <span>{{ item.price * item.quantity|currency }}</span>
+</div>
+<div>Total:{{ totalCart()|currency }}</div>
+<div>Discount:{{ discount|currency }}</div>
+<div>SubTotal:{{ subtotal()|currency }}</div>
+</body>
+</html>

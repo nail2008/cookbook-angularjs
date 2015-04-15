@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo20">
+<head>
+    <meta charset="utf-8">
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo200.js"></script>
+    <title>Chapter2 AngularJS应用骨架</title>
+</head>
+<body>
+<h1>P47 校验用户输入</h1>
+
+<form name="addUserForm" ng-controller="AddUserController">
+    <div>First name:<input ng-model="user.first" required/></div>
+    <div>Last name:<input ng-model="user.last" required/></div>
+    <div>Email:<input type='email' ng-model="user.email" required/></div>
+    <div>Age:<input type="number" ng-model="user.age" ng-maxlength="3" ng-minlength="1" required/></div>
+    <div>
+        <button ng-click="addUser()"
+                ng-disabled="!addUserForm.$valid">Submit
+        </button>
+    </div>
+    {{ message }}
+</form>
+
+
+
+</body>
+</html>

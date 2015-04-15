@@ -2,7 +2,7 @@
  * Created by Administrator on 2015/4/12.
  */
 
-var app = angular.module('chp5.demo04', []);
+var app = angular.module('ngb2.chp5.demo04', []);
 app.controller('ParentController', function ($scope) {
     $scope.person = {
         greeted: false

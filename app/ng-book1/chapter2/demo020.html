@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="ngb1.chp2.demo2">
+<head>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="demo020.js"></script>
+    <title>Hello Angular</title>
+</head>
+<body>
+P16 ±Ìµ• ‰»Î<br/>
+<form ng-controller="MyController">
+    <input type="checkbox" ng-model="youCheckedIt"/>
+</form>
+
+<form ng-controller="StartUpController">
+    Starting:<input ng-change="computeNeeded()" ng-model="funding.startingEstimate">
+    Recommendation:{{ funding.needed }}
+</form>
+
+</body>
+</html>
