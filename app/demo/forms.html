@@ -61,19 +61,43 @@
                            integer/>
                 </div>
 
+                <div class="form-group">
+                    <label>时间戳</label>
+                    <input type="datetime"
+                           ng-model="form.time1"
+                           class="form-control"
+                           />
+                </div>
+
+                <div class="form-group">
+                    <label>时间戳local</label>
+                    <input type="datetime-local"
+                           ng-model="form.time2"
+                           class="form-control"
+                            />
+                </div>
+
+                <div class="form-group">
+                    <label>日期</label>
+                    <input type="date"
+                           ng-model="form.time3"
+                           class="form-control"
+                            />
+                </div>
+
                 <div class="form-group has-success">
                     <label>邮箱</label>
                     <input type="email"
                            ng-model="email"
                            class="form-control"
-                           placeholder="Enter email">
+                           placeholder="Enter email"/>
                 </div>
 
                 <div class="form-group">
                     <label>密码</label>
                     <input type="password"
                            class="form-control"
-                           placeholder="Password">
+                           placeholder="Password"/>
                 </div>
 
                 <div class="form-group">
@@ -121,6 +145,17 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label>单选下拉列表 ui-select</label>
+                    <ui-select ng-model="form.color" class="form-control" theme="bootstrap"
+                               ng-disabled="disabled" ng-required="true">
+                        <ui-select-match placeholder="Select color...">{{$item}}</ui-select-match>
+                        <ui-select-choices repeat="color in availableColors | filter:$select.search">
+                            {{color}}
+                        </ui-select-choices>
+                    </ui-select>
                 </div>
 
                 <div class="form-group">
