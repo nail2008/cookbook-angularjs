@@ -4,11 +4,11 @@
 
 var app = angular.module('ngb2.chp6.demo01', []);
 app.controller('MyController', function ($scope,$parse) {
-   //$watchº¯Êı¼áÍ¦exprµÄ±ä»¯
+    //$watchå‡½æ•°åšæŒºexprçš„å˜åŒ–
     $scope.$watch('expr', function (newVal, oldVal, scope) {
-       if(newVal!==oldVal){
-           var parseFun = $parse(newVal);
-           $scope.parseValue = parseFun(scope);
-       }
-   });
+        if(newVal!==oldVal){
+            var parseFun = $parse(newVal);
+            $scope.parseValue = parseFun(scope);
+        }
+    });
 });

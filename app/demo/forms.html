@@ -1,44 +1,178 @@
 <div ui-content-for="title">
-  <span>Forms</span>
+    <span>Forms</span>
 </div>
 
 <div class="scrollable">
- <div class="scrollable-content section">
-   
-  <form role="form" ng-submit='login()'>
-    <fieldset>
-      <legend>Login</legend>
-        <div class="form-group has-success has-feedback">
-          <label>Email</label>
-          <input type="email"
-                 ng-model="email"
-                 class="form-control"
-                 placeholder="Enter email">
-        </div>
+    <div class="scrollable-content section">
 
-        <div class="form-group">
-          <label>Password</label>
-          <input type="password" 
-                 class="form-control"
-                 placeholder="Password">
-        </div>
+        <form role="form" ng-submit='login()'>
+            <fieldset>
+                <legend>表单示例</legend>
+                <div class="form-group has-success has-feedback">
+                    <label>文本框</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="form.text1"
+                           ng-minlength="5"
+                           ng-maxlength="10"
+                           required/>
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label>文本域</label>
+                     <textarea class="form-control"
+                               ng-model="form.text2" rows="5"
+                               ng-minlength="5"
+                               ng-maxlength="100"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>任意数字</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="form.num1"
+                           ng-maxlength="10"
+                           step="any"/>
+                </div>
+                <div class="form-group">
+                    <label>两位小数</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="form.num2"
+                           ng-maxlength="10"
+                           step="0.01"/>
+                </div>
+                <div class="form-group">
+                    <label>两位小数2</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="form.num3"
+                           name="form.num3"
+                           min="3"
+                           max="50"
+                           step="0.01"/>
+                </div>
+                <div class="form-group">
+                    <label>整数</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="form.num4"
+                           name="form.num4"
+                           min="3"
+                           max="50"
+                           integer/>
+                </div>
 
-        <div class="form-group">
-          <label>Remember Me</label>
-          <ui-switch 
-            ng-model='rememberMe'></ui-switch>
-        </div>
-    </fieldset>
-    <hr>
+                <div class="form-group has-success">
+                    <label>邮箱</label>
+                    <input type="email"
+                           ng-model="email"
+                           class="form-control"
+                           placeholder="Enter email">
+                </div>
 
-    <button class="btn btn-primary btn-block">
-      Login
-    </button>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password"
+                           class="form-control"
+                           placeholder="Password">
+                </div>
 
-    <div ui-content-for="navbarAction">
-      <a class='btn' ng-click='login()'>Login</a>
+                <div class="form-group">
+                    <label>普通下拉列表</label>
+                    <select class="form-control"
+                            placeholder="Select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>多选下拉列表 ui-select</label>
+                    <ui-select multiple ng-model="form.colors" class="form-control" theme="bootstrap"
+                               ng-disabled="disabled" ng-required="true">
+                        <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+                        <ui-select-choices repeat="color in availableColors | filter:$select.search">
+                            {{color}}
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+                <p>Selected: {{form.colors}}</p>
+
+                <div class="form-group">
+                    <label>QuerySelect</label>
+                    <input type="text"
+                           readonly
+                           ui-turn-on="querySelect"
+                           ng-model="querySelect"
+                           class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>QuerySelect2</label>
+                    <input type="text"
+                           readonly
+                           ui-turn-on="querySelect"
+                           ng-model="querySelect"
+                           class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Remember Me</label>
+                    <ui-switch
+                            ng-model='rememberMe'></ui-switch>
+                </div>
+            </fieldset>
+            <hr>
+
+            <button class="btn btn-primary btn-block">
+                Login
+            </button>
+
+            <div ui-content-for="navbarAction">
+                <a class='btn' ng-click='login()'>Login</a>
+            </div>
+
+        </form>
     </div>
+</div>
 
-  </form>
- </div>
+<div ui-content-for="modals">
+    <div ng-include="'querySelect.html'"></div>
 </div>

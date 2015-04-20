@@ -2,13 +2,13 @@
  * Created by Administrator on 2015/4/13.
  */
 
-var app = angular.module('ngb1.chp2.demo14', []);//P38 ĞèÒª¶à¸öÄ£¿é£¬ÔÚ[]ÅäÖÃÒÀÀµ£¬±ÈÈç£º['ModuleA','ModuleB']
+var app = angular.module('ngb1.chp2.demo14', []);//P38 éœ€è¦å¤šä¸ªæ¨¡å—ï¼Œåœ¨[]é…ç½®ä¾èµ–ï¼Œæ¯”å¦‚ï¼š['ModuleA','ModuleB']
 app.controller('CartController', function ($scope, Items) {
     $scope.items = Items;
 });
-//ÓÃfactory´´½¨·şÎñºÜ¿ì½İ£¬ĞèÒªÁ½¸ö²ÎÊı£¬Ò»¸öÊÇname£¬Ò»¸öÊÇgetFn
+//ç”¨factoryåˆ›å»ºæœåŠ¡å¾ˆå¿«æ·ï¼Œéœ€è¦ä¸¤ä¸ªå‚æ•°ï¼Œä¸€ä¸ªæ˜¯nameï¼Œä¸€ä¸ªæ˜¯getFn
 app.factory('Items', function () {
-    //ÔÚÕæÊµµÄÓ¦ÓÃÖĞ£¬»á´Ó·şÎñ¶ËÀ­È¡Õâ¿éÊı¾İ
+    //åœ¨çœŸå®çš„åº”ç”¨ä¸­ï¼Œä¼šä»æœåŠ¡ç«¯æ‹‰å–è¿™å—æ•°æ®
     return [
         {title: 'Paint pots', quantity: 8, price: 3.95},
         {title: 'Polka dots', quantity: 17, price: 12.95},

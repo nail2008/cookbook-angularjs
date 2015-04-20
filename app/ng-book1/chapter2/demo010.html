@@ -6,12 +6,12 @@
     <title>Hello Angular</title>
 </head>
 <body>
-P16 ��ʾ�ı�<br/>
-ng-bindָ������ݵ����ֵȼ���ʽ��<br/>
+P16 显示文本<br/>
+ng-bind指令绑定数据的两种等价形式：<br/>
 <div ng-controller="MyController">
-    ��һ�֣�ʹ�û����� <![CDATA[{{ }}]]><br/>
+    第一种：使用花括号 <![CDATA[{{ }}]]><br/>
     <p>{{ greeting }}</p>
-    �ڶ��֣�ʹ��ng-bind����
+    第二种：使用ng-bind属性
     <p ng-bind="greeting"></p>
 </div>
 

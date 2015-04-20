@@ -4,7 +4,7 @@
 
 var app = angular.module('ngb2.chp5.demo03', []);
 app.controller('FirstController', function ($scope) {
-    //person对象采用json的形式来定义
+    //person瀵硅薄閲囩敤json鐨勫舰寮忔潵瀹氫箟
     $scope.person = {
         name: 'Ari Lerner'
     };

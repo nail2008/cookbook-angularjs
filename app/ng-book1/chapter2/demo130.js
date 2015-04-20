@@ -21,7 +21,7 @@ app.controller('CartController', function ($scope) {
         $scope.bill.discount = total>100?10:0;
         $scope.bill.subtotal = total-$scope.bill.discount;
     };
-    //$watch函数在监控数组或对象的所有成员时，deepWatch参数必须为true
+    //$watch鍑芥暟鍦ㄧ洃鎺ф暟缁勬垨瀵硅薄鐨勬墍鏈夋垚鍛樻椂锛宒eepWatch鍙傛暟蹇呴』涓簍rue
     //$scope.$watch('items',CalculateTotals,true);
     $scope.$watch($scope.items,CalculateTotals,true);
 });

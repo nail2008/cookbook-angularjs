@@ -2,7 +2,7 @@
 <html ng-app="ngb1.chp2.demo7">
 <head>
 
-    <title>Chapter2 AngularJSÓ¦ÓÃ¹Ç¼Ü</title>
+    <title>Chapter2 AngularJSåº”ç”¨éª¨æ¶</title>
     <style type="text/css">
         .menu-disabled-true{
             color:gray;
@@ -12,14 +12,14 @@
     <script src="demo070.js"></script>
 </head>
 <body>
-P25 CSSÀàºÍÑùÊ½,ÕâÊÇÒ»¸ö»µµÄÀı×Ó
+P25 CSSç±»å’Œæ ·å¼,è¿™æ˜¯ä¸€ä¸ªåçš„ä¾‹å­
 <br/>
 <div ng-controller="MyController">
     <button ng-click="toggleMenu()">Toggle Menu</button>
     <ul ng-show="menuState.show">
-        <!--ÕâÑùÓÃclass²»ºÃ-->
+        <!--è¿™æ ·ç”¨classä¸å¥½-->
         <li class="menu-disabled-{{ isDisabled }}" ng-click="stun()">Stun</li>
-        <!--ÕâÑù¾Í¸ü²»¶ÔÁË-->
+        <!--è¿™æ ·å°±æ›´ä¸å¯¹äº†-->
         <li style="{{ expr }}">BBBB</li>
         <li>CCCC</li>
     </ul>

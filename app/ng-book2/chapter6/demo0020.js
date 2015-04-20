@@ -4,7 +4,7 @@
 
 var app = angular.module('ngb2.chp6.demo02', []);
 app.controller('MyController', function ($scope, $interpolate) {
-//ÉèÖÃ¼àÌı
+//è®¾ç½®ç›‘å¬
     $scope.$watch('emailBody', function (body) {
         if(body){
             var template = $interpolate(body);

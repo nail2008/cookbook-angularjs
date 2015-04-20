@@ -3,22 +3,22 @@
 <head>
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="demo150.js"></script>
-    <title>Chapter2 AngularJSÓ¦ÓÃ¹Ç¼Ü</title>
+    <title>Chapter2 AngularJSåº”ç”¨éª¨æ¶</title>
 </head>
 <body ng-controller="MyController">
-<h1>P39 Ê¹ÓÃ¹ıÂËÆ÷¸ñÊ½»¯Êı¾İ</h1>
+<h1>P39 ä½¿ç”¨è¿‡æ»¤å™¨æ ¼å¼åŒ–æ•°æ®</h1>
 
-<p>¹ıÂËÆ÷µÄÓï·¨£º { { expression | filterName : parameter1 : ...parameterN } }</p>
+<p>è¿‡æ»¤å™¨çš„è¯­æ³•ï¼š { { expression | filterName : parameter1 : ...parameterN } }</p>
 
-<p>Àı1£º»õ±Ò { { 12.9 | currency } } </p>
+<p>ä¾‹1ï¼šè´§å¸ { { 12.9 | currency } } </p>
 
 {{ 12.9|currency }}
 
-<p>Àı2£º±£ÁôÕûÊıµÄÈËÃñ±Ò(ÊéÉÏµÄĞ´·¨ÊÇ´íµÄ) { { 12.9 | number : 0 | currency : '£¤' } } </p>
+<p>ä¾‹2ï¼šä¿ç•™æ•´æ•°çš„äººæ°‘å¸(ä¹¦ä¸Šçš„å†™æ³•æ˜¯é”™çš„) { { 12.9 | number : 0 | currency : 'ï¿¥' } } </p>
 
-{{ 12.9 | number : 0 | currency : '£¤' }}
+{{ 12.9 | number : 0 | currency : 'ï¿¥' }}
 
-<p>Àı3£ºÈ«²¿´óĞ´ { { 'behold the majesty of your page title' | uppercase } }</p>
+<p>ä¾‹3ï¼šå…¨éƒ¨å¤§å†™ { { 'behold the majesty of your page title' | uppercase } }</p>
 {{ 'behold the majesty of your page title' | uppercase }}
 </body>
 </html>

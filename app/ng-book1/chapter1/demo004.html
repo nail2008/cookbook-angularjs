@@ -10,7 +10,7 @@
 <div ng-repeat="item in items">
     <span>{{ item.title }}</span>
     <input ng-model="item.quantity"/>
-    <!--angularÓÐÒ»ÖÖÄÚÖÃ¹ýÂËÆ÷£¬ÓÃÀ´×ª»»ÎÄ±¾µÄ¸ñÊ½£¬±ÈÈçcurrency¾Í¿ÉÒÔÊµÏÖÃÀÔª¸ñÊ½»¯¡£-->
+    <!--angularæœ‰ä¸€ç§å†…ç½®è¿‡æ»¤å™¨ï¼Œç”¨æ¥è½¬æ¢æ–‡æœ¬çš„æ ¼å¼ï¼Œæ¯”å¦‚currencyå°±å¯ä»¥å®žçŽ°ç¾Žå…ƒæ ¼å¼åŒ–ã€‚-->
     <span>{{ item.price|currency }}</span>
     <span>{{ item.price * item.quantity|currency }}</span>
     <button ng-click="remove($index)">Remove</button>
