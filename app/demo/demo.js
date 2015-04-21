@@ -7,7 +7,6 @@ var app = angular.module('MobileAngularUiExamples', [
     'ngMessages',
     'ngSanitize', 'ui.select',
     'mobile-angular-ui',
-
     // touch/drag feature: this is from 'mobile-angular-ui.gestures.js'
     // it is at a very beginning stage, so please be careful if you like to use
     // in production. This is intended to provide a flexible, integrated and and
@@ -254,21 +253,33 @@ app.controller('MainController', function ($rootScope, $scope) {
     //
     // 'Forms' screen
     //
-    $scope.form = {};
-    $scope.form.text1 = 'text123456';
+    $scope.consData = {};
+    $scope.consData.text1 = 'text123456';
 
-    $scope.rememberMe = true;
-    $scope.email = 'me@example.com';
+    $scope.consData.remember = true;
+    $scope.consData.email = 'me@example.com';
 
-    $scope.login = function () {
+    $scope.commit = function () {
         alert('You submitted the login form');
     };
 
+    $scope.person = {};
+    $scope.people = [
+        { name: 'Adam',      email: 'adam@email.com',      age: 12, country: 'United States' },
+        { name: 'Amalie',    email: 'amalie@email.com',    age: 12, country: 'Argentina' },
+        { name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina' },
+        { name: 'Adrian',    email: 'adrian@email.com',    age: 21, country: 'Ecuador' },
+        { name: 'Wladimir',  email: 'wladimir@email.com',  age: 30, country: 'Ecuador' },
+        { name: 'Samantha',  email: 'samantha@email.com',  age: 30, country: 'United States' },
+        { name: 'Nicole',    email: 'nicole@email.com',    age: 43, country: 'Colombia' },
+        { name: 'Natasha',   email: 'natasha@email.com',   age: 54, country: 'Ecuador' },
+        { name: 'Michael',   email: 'michael@email.com',   age: 15, country: 'Colombia' },
+        { name: 'Nicolás',   email: 'nicolas@email.com',    age: 43, country: 'Colombia' }
+    ];
+
     $scope.availableColors = ['Red','Green','Blue','Yellow','Magenta','Maroon','Umbra','Turquoise'];
 
-    $scope.form.colors = ['Blue','Red'];
-
-
+    $scope.consData.colors = ['Blue','Red'];
 
     //TODO 带查询的选择框
     $scope.querySelect = [];
@@ -294,3 +305,23 @@ app.controller('MainController', function ($rootScope, $scope) {
         }
     };
 });
+
+//TODO 唯一验证
+app.directive('ensureUnique', ['$http', function($http) {
+    return {
+        require: 'ngModel',
+        link: function(scope, ele, attrs, c) {
+            scope.$watch(attrs.ngModel, function() {
+                $http({
+                    method: 'POST',
+                    url: '/api/check/' + attrs.ensureUnique,
+                    data: {'field': attrs.ensureUnique}
+                }).success(function(data, status, headers, cfg) {
+                    c.$setValidity('unique', data.isUnique);
+                }).error(function(data, status, headers, cfg) {
+                    c.$setValidity('unique', false);
+                });
+            });
+        }
+    }
+}]);
