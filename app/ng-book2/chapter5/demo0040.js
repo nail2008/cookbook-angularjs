@@ -9,6 +9,7 @@ app.controller('ParentController', function ($scope) {
     };
 });
 app.controller('ChildController', function ($scope) {
+    $scope.person.greeted = true;
     $scope.sayHello = function () {
         $scope.person.name = 'Ari Lerner';
     };
