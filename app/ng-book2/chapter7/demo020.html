@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp7.demo02">
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>第7章 过滤器</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo020.js"></script>
+</head>
+<body>
+<p>P24 各种过滤器</p>
+
+<p>过滤器的语法： { { expression | filterName1 : parameter1 : ...parameterN | filterName2 : parameter1 : ...parameterN } }</p>
+
+<div ng-controller="MyController">
+    <p>1.currency</p>
+
+    <p>例1：货币 { { 12.9 | currency } } </p>
+    {{ 12.9|currency }}
+    <p>例2：保留整数的人民币 { { 12.9 | number : 0 | currency : '￥' } } </p>
+    {{ 12.9 | number : 0 | currency : '￥' }}
+
+    <p>2.date</p>
+
+    <p>内置的本地化日期格式:</p>
+    medium: {{ today | date:'medium' }} <br/>
+    short: {{ today | date:'short' }} <br/>
+    fullDate: {{ today | date:'fullDate' }} <br/>
+    longDate: {{ today | date:'longDate' }} <br/>
+    mediumDate: {{ today | date:'mediumDate' }} <br/>
+    shortDate: {{ today | date:'shortDate' }} <br/>
+    mediumTime: {{ today | date:'mediumTime' }} <br/>
+    shortTime: {{ today | date:'shortTime' }} <br/>
+
+    <p>年份格式化：</p>
+    yyyy： {{ today|date:'yyyy' }} <br/>
+    yy： {{ today|date:'yy' }} <br/>
+    y: {{ today|date:'y' }} <br/>
+
+    <p>月份格式化：</p>
+    MMMM： {{ today|date:'MMMM' }} <br/>
+    MMM： {{ today|date:'MMM' }} <br/>
+    MM: {{ today|date:'MM' }} <br/>
+    一年中的第几个月：M: {{ today|date:'M' }} <br/>
+
+    <p>日期格式化：</p>
+    dd： {{ today|date:'dd' }} <br/>
+    一个月中的第几天：d： {{ today|date:'d' }} <br/>
+    EEEE: {{ today|date:'EEEE' }} <br/>
+    EEE: {{ today|date:'EEE' }} <br/>
+
+    <p>小时格式化：</p>
+    24小时制：HH： {{ today|date:'HH' }} <br/>
+    一天中的第几个小时：H： {{ today|date:'H' }} <br/>
+    12小时制：hh: {{ today|date:'hh' }} <br/>
+    上午或下午的第几个小时：h: {{ today|date:'h' }} <br/>
+
+    <p>分钟格式化：</p>
+    mm： {{ today|date:'mm' }} <br/>
+    一个小时中的第几分钟：m： {{ today|date:'m' }} <br/>
+
+    <p>秒数格式化：</p>
+    ss: {{ today|date:'ss' }} <br/>
+    一分钟内的第几秒：s: {{ today|date:'s' }} <br/>
+    毫秒数：.sss: {{ today|date:'.sss' }} <br/>
+
+    <p>字符格式化：</p>
+    上下午标识：a： {{ today|date:'mm' }} <br/>
+    四位时区标识：Z： {{ today|date:'m' }} <br/>
+
+    <p>自定义日期格式：</p>
+    {{ today|date:'MMMd,y' }} <br/>
+    {{ today|date:'EEEE,d,M' }} <br/>
+    {{ today|date:'hh:mm:ss.sss' }} <br/>
+    {{ today|date:'hh:mm:ss.sss' }} <br/>
+    yyyy-MM-dd HH:mm:ss.sss : {{ today|date:'yyyy-MM-dd HH:mm:ss.sss' }} <br/>
+
+    <p>3.filter</p>
+
+    <p>字符串过滤器：返回包含过滤条件的字符</p>
+    {{ ['Ari','Lerner','Likes','To','Eat','Pizza'] | filter:'e' }}
+    <p>对象过滤器：返回包含过滤条件的字符</p>
+    {{ [{name:'Ari',city:'San Francisco','favorite food':'Pizza'},
+    {name:'Nate',city:'San Francisco','favorite food':'indian food'}]
+    | filter:{'favorite food':'Pizza'} }}
+    <p>用自定义函数来进行过滤（注意：这个不是自定义过滤器）</p>
+    {{['Ari','likes','to','travel']|filter:isCaptitalized}}
+    <p>上面只用了filter的一个参数，第二个参数可以三选一：</p>
+    1、true 表示用angular.equals(expected,actual)对两个值进行严格比较，完全匹配才有效。<br/>
+    {{ ['Ari','Lerner','Likes','To','Eat','Pizza'] | filter:'Eat':true }} <br/>
+    2、false 表示进行区分大小写的子字符串比较（这个有问题，好像没起作用）<br/>
+    {{ ['Ari','Lerner','Likes','To','Eat','Pizza'] | filter:'e':false }} <br/>
+    3、函数 过滤时会运行这个函数，如果返回true就接受这个元素,(实际上第一个参数就没意义了)<br/>
+    {{ ['Ari','Lerner','Likes','To','Eat','Pizza'] | filter:'e':isCaptitalized }} <br/>
+
+    <p>4.json 把json对象以字符串形式展示</p>
+    {{ {name:'Ari',city:'San Francisco'} | json }}
+
+    <p>5.limitTo</p>
+    {{ 'San Francisco is very cloudy' | limitTo:3 }} <br/>
+    {{ 'San Francisco is very cloudy' | limitTo:-6 }} <br/>
+    {{ ['Ari','Lerner','Likes','To','Eat','Pizza'] | limitTo:2 }} <br/>
+
+    <p>6.lowercase</p>
+    {{ 'San Francisco is very cloudy' | lowercase }} <br/>
+
+    <p>7.number</p>
+    AAAA{{ 'asd' |number }}BBBB this is a null <br/>
+    {{ 12345667|number }}<br/>
+    {{ 12.2353234|number:2 }}<br/>
+    <p>8.orderBy</p>
+    <p>以name排序，默认以正序排序</p>
+    {{ [{name:'Ari',city:'San Francisco','favorite food':'Pizza'},
+    {name:'Mike',city:'San Francisco','favorite food':'indian food'},
+    {name:'Nate',city:'San Francisco','favorite food':'indian food'}]
+    | orderBy:'name' }}
+    <p>第二个参数为true以倒序排序</p>
+    {{ [{name:'Ari',city:'San Francisco','favorite food':'Pizza'},
+    {name:'Mike',city:'San Francisco','favorite food':'indian food'},
+    {name:'Nate',city:'San Francisco','favorite food':'indian food'}]
+    | orderBy:'name':true }}
+    <p>9.uppercase</p>
+    {{ 'San Francisco is very cloudy' | uppercase }} <br/>
+</div>
+</body>
+</html>
