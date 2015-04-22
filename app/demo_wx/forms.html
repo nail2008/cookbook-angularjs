@@ -1,0 +1,246 @@
+<div ui-content-for="title">
+    <span>组对焊接记录</span>
+</div>
+
+<div class="scrollable">
+    <div class="scrollable-content section">
+
+        <form name="form" role="form" novalidate ng-submit='commit()'>
+            <fieldset>
+                <legend>表单示例</legend>
+                <div class="form-group has-success has-feedback">
+                    <label>文本框（5-10字长，必填）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="consData.text1"
+                           name="text1"
+                           ng-minlength="5"
+                           ng-maxlength="10"
+                           required/>
+
+                    <div class="error"
+                         ng-show="form.text1.$dirty && form.text1.$invalid">
+                        <small class="error"
+                               ng-show="form.text1.$error.required">
+                            此为必填项
+                        </small>
+                        <small class="error"
+                               ng-show="form.text1.$error.minlength">
+                            至少5个字
+                        </small>
+                        <small class="error"
+                               ng-show="form.text1.$error.maxlength">
+                            最多10个字
+                        </small>
+                    </div>
+                </div>
+                <p>text1合法吗？ {{ form.text1.$valid }}</p>
+
+                <p>错误: {{ form.text1.$error }}</p>
+
+                <div class="form-group has-success has-feedback">
+                    <label>文本域（5-100字长）</label>
+                     <textarea class="form-control"
+                               ng-model="consData.text2"
+                               name="text2"
+                               rows="3"
+                               ng-minlength="5"
+                               ng-maxlength="100"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>任意数字（长度小于10）</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="consData.num1"
+                           name="num1"
+                           ng-maxlength="10"
+                           step="any"/>
+                </div>
+                <div class="form-group">
+                    <label>两位小数（精度0.01，长度小于10,必填）</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="consData.num2"
+                           name="num2"
+                           ng-maxlength="10"
+                           ng-minlength="2"
+                           step="0.01"
+                           required/>
+
+                </div>
+                <div class="form-group">
+                    <label>两位小数（精度0.01，大小在3-50之间，必填）</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="consData.num3"
+                           name="num3"
+                           min="3"
+                           max="50"
+                           step="0.01" required/>
+
+                    <div class="error" ng-messages="form.num3.$error" ng-messages-include="formError.html">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>整数（3-50之间的整数）</label>
+                    <input type="number"
+                           class="form-control"
+                           ng-model="consData.num4"
+                           name="num4"
+                           min="3"
+                           max="50"
+                           integer required/>
+                    <ng-messages for="form.num4.$error" multiple>
+                        <ng-message when="required">此为必填项</ng-message>
+                        <ng-message when="min">至少大于3</ng-message>
+                        <ng-message when="max">最大小于5</ng-message>
+                        <ng-message when="number">请输入数字</ng-message>
+                        <ng-message when="integer">请输入整数</ng-message>
+                    </ng-messages>
+                </div>
+
+
+                <div class="form-group">
+                    <label>时间戳local</label>
+                    <input type="datetime-local"
+                           ng-model="consData.time2"
+                           name="time2"
+                           class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label>日期</label>
+                    <input type="date"
+                           ng-model="consData.time3"
+                           name="time3"
+                           class="form-control"
+                            />
+                </div>
+
+                <div class="form-group has-success">
+                    <label>邮箱</label>
+                    <input type="email"
+                           ng-model="consData.email"
+                           name="email"
+                           class="form-control"
+                           placeholder="Enter email"/>
+                </div>
+
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password"
+                           class="form-control"
+                           ng-model="consData.password"
+                           name="password"
+                           placeholder="Password"/>
+                </div>
+
+                <div class="form-group">
+                    <label>普通下拉列表</label>
+                    <select class="form-control"
+                            name="select1"
+                            ng-model="consData.select1"
+                            placeholder="Select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group no-padding">
+                    <label>单选下拉列表 ui-select</label>
+                    <ui-select ng-model="consData.person.selected" name="person" theme="bootstrap"
+                               class="form-control" title="Choose a person">
+                        <ui-select-match placeholder="Select or search a person in the list...">
+                            {{$select.selected.name}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="item in people | filter: $select.search">
+                            <div ng-bind-html="item.name | highlight: $select.search"></div>
+                            <small ng-bind-html="item.email | highlight: $select.search"></small>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+                <p>Selected:{{ consData.person.selected }}</p>
+
+                <div class="form-group">
+                    <label>多选下拉列表 ui-select</label>
+                    <ui-select multiple ng-model="consData.colors" name="colors" class="form-control" theme="bootstrap"
+                               ng-disabled="disabled" ng-required="true">
+                        <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+                        <ui-select-choices repeat="color in availableColors | filter:$select.search">
+                            {{color}}
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+                <p>Selected: {{consData.colors}}</p>
+
+                <div class="form-group">
+                    <label>QuerySelect</label>
+                    <input type="text"
+                           readonly
+                           ui-turn-on="querySelect"
+                           ng-model="querySelect"
+                           class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Remember Me</label>
+                    <ui-switch
+                            ng-model='consData.remember' name="remember"></ui-switch>
+                </div>
+            </fieldset>
+            <hr>
+
+            <button class="btn btn-primary btn-block" ng-disabled="form.$invalid">
+                Commit Form
+            </button>
+
+            <div ui-content-for="navbarAction">
+                <a class='btn' ng-click='commit()'>Commit</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'querySelect.html'"></div>
+</div>
+
