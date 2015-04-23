@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp7.demo03">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第7章 过滤器</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo030.js"></script>
+</head>
+<body>
+<p>P29 自定义过滤器</p>
+
+<div ng-controller="MyController">
+    {{ 'giNger lOvEs doG trEAts'|lowercase|titleCase }}     <br/>
+    {{ 'giNger lOvEs doG trEAts'|lowercase|capitalize }}
+</div>
+</body>
+</html>
