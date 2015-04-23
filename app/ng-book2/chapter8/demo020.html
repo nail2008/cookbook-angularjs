@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp8.demo02">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第8章 指令简介</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo020.js"></script>
+</head>
+<body>
+<p>P49 指令中的表达式</p>
+
+<div ng-controller="MyController">
+    <p>1、赋值给内置指令ng-init<br/>
+    <h1 ng-init="greeting='HelloWorld'">
+        The greeting is:{{ greeting }}
+    </h1>
+    <!--TODO ，这里有点没看懂说什么，后面回顾下-->
+    <p>2、用表达式来声明指令</p>
+    <div my-directive="someExpression"></div>
+    <p>3、当前作用域的例子就略过了，看 ngb1.chp2.demo11 和 ngb2.chp5.demo04</p>
+
+</div>
+
+AAAA{{ greeting }}BBBB 内置指令中的赋值是有作用域的，这个引用在MyController以外，所以为空。<br/>
+</body>
+</html>

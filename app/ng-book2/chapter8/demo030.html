@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp8.demo03">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第8章 指令简介</title>
+    <!--<script type="text/javascript" src="http://cdn.bootcss.com/angular.js/1.2.26/angular.js"></script>-->
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo030.js"></script>
+</head>
+<body>
+<p>P50 向指令中传递数据</p>
+<div ng-controller="MyController">
+    <div my-directive
+         url1="http://www.baidu.com"
+         my-link-text="Click me to go to Baidu"></div>
+    <br/>
+</div>
+</body>
+</html>

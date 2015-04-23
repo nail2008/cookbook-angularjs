@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp8.demo01">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第8章 指令简介</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="demo010.js"></script>
+</head>
+<body>
+<p>P45 自定义指令，指令详解见第10章介绍</p>
+<div ng-controller="MyController">
+    <p>指令在页面上采用小写+连字符的形式定义:my-directive<br/>
+        指令定义的js代码里以驼峰式定义:myDirective</p>
+    <my-directive></my-directive>
+    <p>以下几种方式都是合法的，但出于兼容性考虑，请使用属性方式命令 &lt;div my-directive&gt;&lt;/div&gt;</p>
+    <my-directive></my-directive>   <br/>
+    <div my-directive></div>        <br/>
+    <div class="my-directive"></div>    <br/>
+    <!-- directive:my-directive -->        <br/>
+</div>
+</body>
+</html>
