@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp9.demo02">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第9章 内置指令</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>-->
+</head>
+<body>
+<p>P59 在指令中使用子作用域</p>
+
+<p>1.ng-app及$rootScope 略</p>
+
+<p>2.ng-controller</p>
+
+<p>最佳实践：不要将$scope赋值为值类型对象（字符串、布尔值或数字），而应该始终通过$scope.的方式来引用</p>
+
+<p>最佳实践：JavaScript对象中字符串、数字和布尔型变量是值复制，对象、数组和函数是引用复制。应使用后者来进行$scope变量声明，已保值双向绑定的一致。如下$scope.someModel.someValue</p>
+
+<div ng-controller="SomeController">
+    {{ someModel.someValue }}
+    <button ng-click="someAction()">Communicate to child</button>
+    <div ng-controller="ChildController">
+        {{ someModel.someValue }}
+        <button ng-click="childAction()">Communicate to parent</button>
+    </div>
+</div>
+<script>
+    var app = angular.module('ngb2.chp9.demo02', [])
+            .controller('SomeController', function ($scope) {
+                // best practice, always use a model
+                $scope.someModel = {
+                    someValue: 'hello computer'
+                }
+                $scope.someAction = function () {
+                    $scope.someModel.someValue = 'hello human, from parent';
+                };
+            })
+            .controller('ChildController', function ($scope) {
+                $scope.childAction = function () {
+                    $scope.someModel.someValue = 'hello human, from child';
+                };
+            });
+</script>
+
+<p>3.ng-include</p>
+<!--ng-include中的url必须在''中-->
+<div ng-include="'demo020_temp.html'" ng-controller="MyController" ng-init="name='World'"> Hello {{ name }}</div>
+<script>
+    app.controller('MyController', function ($scope) {
+        $scope.name = 'MyController';
+    });
+</script>
+
+<p>4.ng-switch</p>
+<input type="text" ng-model="person.name"/>
+
+<div ng-switch on="person.name">
+    <p ng-switch-default>And the winner is</p>
+
+    <h1 ng-switch-when="Ari">{{person.name}}</h1>
+</div>
+
+<p>5.ng-view 涉及路由，12章介绍</p>
+<ng-view></ng-view>
+
+<p>6.ng-if</p>
+
+<div ng-if="false">won't see this</div>
+<div ng-if="true">see this</div>
+<div ng-if="2+2===4">see this</div>
+
+<p>7.ng-repeat</p>
+<ul ng-controller="PersonController">
+    <li ng-repeat="person in people" ng-class="{even:!$even,odd:!$odd}">
+        {{person.name}} lives in {{person.city}}
+    </li>
+</ul>
+<style>
+    .even {
+        background-color: red;
+    }
+
+    .odd {
+        background-color: blue;
+    }
+</style>
+<script !src="">
+    app.controller('PersonController', function ($scope) {
+        $scope.people = [
+            {name: 'Ari', city: 'San Francisco'},
+            {name: 'Erik', city: 'Seattle'},
+            {name: 'Ari', city: 'San Francisco'},
+            {name: 'Erik', city: 'Seattle'},
+            {name: 'Ari', city: 'San Francisco'},
+            {name: 'Erik', city: 'Seattle'}];
+    });
+</script>
+
+<p>8.ng-init</p>
+
+<div ng-init="greeting='Hello';person='World'">{{greeting}} {{person}}</div>
+
+<p>9.{ { } }</p>
+
+<p>10.ng-bind 直到有值才渲染</p>
+
+<div ng-init="greet='NiHao'">{{greet}}</div>
+<div ng-init="greet='NiHao'"><p ng-bind="greet"></p></div>
+
+<p>11.ng-cloak 还可以使用这个来避免未渲染元素闪烁，与ng-bind的区别是这个会先渲染并隐藏，有值的时候才显示</p>
+<input type="text" ng-model="greet"/>
+
+<div ng-init="greet='NiHao'"><p ng-cloak>AAA {{greet}} BBB</div>
+<!--看来不是隐藏整个div，只隐藏括号里的东西-->
+
+<p>12.ng-bind-template</p>
+
+<div ng-bind-template="{{greeting}} {{person}}"></div>
+<!--IDE报错，但是对的-->
+<div ng-bind="greeting+' '+person"></div>
+<!--这是对的-->
+<div ng-bind="{{greeting}},{{person}}"></div>
+<!--这是错的-->
+
+<p>13.ng-model</p>
+
+<p>最佳实现：应始终绑定一个数据模型内的属性，而不是$scope上的属性。</p>
+<input type="text" ng-model="modelName.someProperty"/> Good <br/>
+<input type="text" ng-model="scopeProperty"/> Bad <br/>
+
+<p>14.ng-show/ng-hide</p>
+
+<div ng-show="1+1==2">1+1==2</div>
+<div ng-show="1+1==3">1+1==3</div>
+<div ng-hide="1+1==2">1+1==2</div>
+<div ng-hide="1+1==3">1+1==3</div>
+
+<p>15.ng-change 和ng-model联合使用，当表单输入发生变化时按给定表达式计算值</p>
+
+<div ng-controller="EquationController">
+    <input type="text" ng-model="equation.x" ng-change="change()"/><br/>
+    <code>{{equation.output}}</code>
+</div>
+<script !src="">
+    app.controller('EquationController', function ($scope) {
+        $scope.equation = {};
+        $scope.change = function () {
+            $scope.equation.output = parseInt($scope.equation.x) + 2;
+        };
+    });
+</script>
+
+<p>16.ng-form</p>
+ng-form是可以嵌套的；ng-valid、ng-invalid、ng-pristion、ng-dirty； <br/>
+ng-submit和ng-click绑定在一个第一个按钮或sumbit类型button上可以用来提交form，但只能取其一种方式。 <br/>
+<b>下面的例子演示了从服务器返回的json数据动态生成一个表单：</b><br/>
+
+<form name="signup_form" ng-controller="FormController" ng-submit="submitForm()" novalidate>
+    <div ng-repeat="field in fields" ng-form="signup_form_input">
+        <input type="text" name="dynamic_input" ng-required="field.isRequired" ng-model="field.name"
+               placeholder="{{field.placeholder}}"/>
+
+        <div ng-show="signup_form_input.dynamic_input.$dirty&& signup_form_input.dynamic_input.$invalid"><span
+                class="error" ng-show="signup_form_input.dynamic_input.$error.required">The field is required.</span>
+        </div>
+    </div>
+    <button type="submit" ng-disabled="signup_form.$invalid">Submit All</button>
+</form>
+<style>
+    input.ng-invalid {
+        border: 1px solid red;
+    }
+
+    input.ng-valid {
+        border: 1px solid green;
+    }
+</style>
+<script>
+    app.controller('FormController', function ($scope) {
+        $scope.fields = [
+            {placeholder: 'Username', isRequired: true},
+            {placeholder: 'Password', isRequired: true},
+            {placeholder: 'Email(optional)', isRequired: false}
+        ];
+        $scope.submitForm = function () {
+            alert("it works!");
+        }
+    });
+</script>
+
+<p>17.ng-click 略，见P68</p>
+<p>18.ng-select “动态”的数据列表</p>
+<div ng-controller="CityController">
+    <select ng-model="city" ng-options="city.name for city in cities">
+        <option value="">Choose City</option>
+    </select>
+    Best City:{{city.name}}
+</div>
+<script>
+    app.controller('CityController', function ($scope) {
+        $scope.cities = [
+            {name:'Seattle'},
+            {name:'New York'},
+            {name:'Chicago'},
+            {name:'Boston'},
+            {name:'Beijing'}
+        ];
+    });
+</script>
+
+<p>19.ng-submit 略，见P70</p>
+
+<p>20.ng-class</p>
+动态控制样式，在随机数大于5时将.red类添加到div上： <br/>
+<div ng-controller="LotteryController">
+    <button ng-click="x=generateNumber()" ng-init="x=0">
+        Draw Number
+    </button>
+    <div ng-class="{red:x>5}" ng-if="x>5">
+        You won!
+    </div>
+
+    <p>Number is:{{x}}</p>
+</div>
+<style>
+    .red{
+        background-color: red;
+    }
+</style>
+<script !src="">
+    app.controller('LotteryController', function ($scope) {
+        $scope.generateNumber = function () {
+            return Math.floor((Math.random()*10)+1);
+        };
+    });
+</script>
+
+<p>21.ng-attr-(suffix) P71 个人理解当浏览器或者解析器对格式要求很严苛时，可以将原标签加上这个前缀，浏览器或解析器就会处理{ {   } }</p>
+</body>
+</html>

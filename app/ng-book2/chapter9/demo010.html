@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp9.demo01">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第9章 内置指令</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>-->
+</head>
+<body>
+<p>P56 基础ng属性指令</p>
+
+<p>一、布尔属性</p>
+
+<p>1.ng-disabled</p>
+<input type="text" ng-model="someProperty" placeholder="TypetoEnable"/>
+<button ng-model="button" ng-disabled="!someProperty">AButton</button>
+<p></p>
+<textarea ng-disabled="isDisabled">Wait5seconds</textarea>
+
+<p>2.ng-readonly</p>
+<input type="text" ng-model="someProperty"/><br/>
+<input type="text" ng-readonly="someProperty" value="Some text"/>
+<script>
+    var app = angular.module('ngb2.chp9.demo01', []).run(function ($rootScope, $timeout) {
+        $rootScope.isDisabled = true;
+        $timeout(function () {
+            $rootScope.isDisabled = false;
+        }, 3000);
+    });
+</script>
+
+<p>3.ng-checked</p>
+<label>someProperty = {{ someProperty }}</label><br/>
+<input type="checkbox" ng-checked="someProperty" ng-init="someProperty=true" ng-model="someProperty"/><br/>
+<label>anotherProperty = {{ anotherProperty }}</label><br/>
+<input type="checkbox" ng-checked="anotherProperty" ng-init="anotherProperty=false" ng-model="anotherProperty"/><br/>
+
+<p>4.ng-selected</p>
+<input type="checkbox" ng-model="isTwoFish"/><br/>
+<select>
+    <option>One Fish</option>
+    <option ng-selected="isTwoFish">Two Fish</option>
+</select>
+
+<p>二、类布尔属性</p>
+<p>1.ng-href</p>
+ng-href： <a ng-href="{{ myHref }}">I'm feeling lucky,when I load</a><br/>
+href   ： <a href="{{ myHref }}">I'm feeling 404</a><br/>
+<script>
+    app.run(function ($rootScope, $timeout) {
+        $timeout(function () {
+            $rootScope.myHref = "http://www.baidu.com";
+        }, 3000);
+    });
+</script>
+
+<p>2.ng-src</p>
+ng-src： <img ng-src="{{ imgSrc }}"/><br/>
+下面这个你会发现有一次失败的请求，而上面那个只有imgSrc有值的时候才请求  <br/>
+src   ： <img src="{{ imgSrc }}"/><br/>
+<script>
+    app.run(function ($rootScope, $timeout) {
+        $timeout(function () {
+            $rootScope.imgSrc = "http://news.baidu.com/resource/img/logo_news_276_88.png?date=20150104";
+        }, 3000);
+    });
+</script>
+</body>
+</html>
