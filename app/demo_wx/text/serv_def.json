@@ -1,0 +1,4922 @@
+{
+  "LINKS": {},
+  "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+  "SERV_QUERY_MODE": "1",
+  "SERV_DELETE_FLAG": "2",
+  "SERV_KEYS": "ID",
+  "SERV_PAGE_COUNT": "50",
+  "SERV_LIST_STYLE": "",
+  "SERV_PID": "",
+  "SERV_TYPE": "2",
+  "SERV_NAME": "焊口组对预热",
+  "SERV_JS": "",
+  "SERV_FILE_FLAG": "",
+  "SERV_CARD_LOAD": "",
+  "SERV_COMMENT_FLAG": "",
+  "ITEMS": {
+    "ZDY_WELD": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "-5",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "2",
+      "_ROWNUM_": "0",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "焊口",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "2",
+      "ITEM_TYPE": "3",
+      "S_MTIME": "2014-08-25 16:27:07:281",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0YcSrwnKt4NVXqei6GKPnK",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "0",
+      "_PK_": "0YcSrwnKt4NVXqei6GKPnK",
+      "ITEM_LIST_ALIGN": "",
+      "ITEM_INPUT_TYPE": "10",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "2",
+      "ITEM_CODE": "ZDY_WELD",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "ID": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "主键",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "0",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "1",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "主键",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:159",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2JvgaHfIsFfxHQLbJ5thwhA",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2JvgaHfIsFfxHQLbJ5thwhA",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "ID",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "WELD_ID": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "焊口编号",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "10",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "2",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "焊口编号",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:42:08:870",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2GVX93uHHxcFbWzMfFODlgW6",
+      "ITEM_LIST_FLAG": "1",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "100",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "1",
+      "_PK_": "2GVX93uHHxcFbWzMfFODlgW6",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "1",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "WELD_ID",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "WELD_GAP": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "间隙(mm)",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "20",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "3",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "间隙(mm)",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:23:629",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "08kHe02Xx7BEtjDfl9uFLJC",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "08kHe02Xx7BEtjDfl9uFLJC",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "WELD_GAP",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "THREAD_PITCH": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "螺纹间距（mm）",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "30",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "4",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "螺纹间距（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:23:629",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1h2xmI1IR8oaMbbvkR6QWi",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1h2xmI1IR8oaMbbvkR6QWi",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "THREAD_PITCH",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "WRONG_SIDE": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "错边量（mm）",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "40",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "5",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "错边量（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:23:629",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0Az8nASqtfZr5zERuJ7t2c",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0Az8nASqtfZr5zERuJ7t2c",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "WRONG_SIDE",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "WELD_PITCH": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "相邻焊缝间距",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "50",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "6",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "相邻焊缝间距（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:26:41:453",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0OvHlblXVZd9EdGNbZqsK59",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0OvHlblXVZd9EdGNbZqsK59",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "WELD_PITCH",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "PREHEAT_TEMP": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "预热温度℃",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "60",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "7",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "预热温度（℃）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-12-27 11:55:51:034",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "3dAHRsXit6Pa25srTyyCgG",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "3dAHRsXit6Pa25srTyyCgG",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "PREHEAT_TEMP",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "PREHEAT_WIDTH": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "预热宽度",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "70",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "8",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "预热宽度（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:27:11:990",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1vlDQqojN9Vqwr35USzHnK",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1vlDQqojN9Vqwr35USzHnK",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "PREHEAT_WIDTH",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "RECORD_TIME": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "入库时间",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "72",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "4",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "9",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "入库时间",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:27:21:886",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1GMl84xCh81onlVC9EeL3X",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "1",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "30",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1GMl84xCh81onlVC9EeL3X",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "RECORD_TIME",
+      "ITEM_INPUT_DEFAULT": "@DATE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "ZDY_PIPE": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "75",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "2",
+      "_ROWNUM_": "10",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "位置",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "2",
+      "ITEM_TYPE": "3",
+      "S_MTIME": "2014-08-25 17:27:40:808",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0QlKFq9CRdTr1BHb10mTrc",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "0",
+      "_PK_": "0QlKFq9CRdTr1BHb10mTrc",
+      "ITEM_LIST_ALIGN": "",
+      "ITEM_INPUT_TYPE": "10",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "2",
+      "ITEM_CODE": "ZDY_PIPE",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "STAKE_ID": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "桩号",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "80",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "11",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "起始桩号",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:10:07:888",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0PX9OIfml09HmPaxfFQYNK",
+      "ITEM_LIST_FLAG": "1",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_XL_PEG",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0PX9OIfml09HmPaxfFQYNK",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "STAKE_ID",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": "CPDCP_XL_PEG"
+    },
+    "RELATIVE_POSITION": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "相对桩位置",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "90",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "12",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "相对起始桩里程（m）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:10:07:942",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1eOZuhcjF5paqFaI3rnv9T",
+      "ITEM_LIST_FLAG": "1",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,3",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1eOZuhcjF5paqFaI3rnv9T",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "RELATIVE_POSITION",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "FORM_PIPE_SLID": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "95",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "2",
+      "_ROWNUM_": "13",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "前钢管",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "2",
+      "ITEM_TYPE": "3",
+      "S_MTIME": "2014-08-25 16:22:45:838",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1aXu1ODZ1fU8ifuy2pMGYQ",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "0",
+      "_PK_": "1aXu1ODZ1fU8ifuy2pMGYQ",
+      "ITEM_LIST_ALIGN": "",
+      "ITEM_INPUT_TYPE": "10",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "2",
+      "ITEM_CODE": "FORM_PIPE_SLID",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "FRONT_EQUIPMENT_NO": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "前管号",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "100",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "14",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "{SUBSERV:\"MDC_XL_PIPE\"}",
+      "ITEM_NAME": "前管号",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:10:07:989",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2xCjsvoPpb0XU0NbO5oXql",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PIPE",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2xCjsvoPpb0XU0NbO5oXql",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "FRONT_EQUIPMENT_NO",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": "CPDCP_PIPE"
+    },
+    "GROOVE_F": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "坡口角度(°)",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "120",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "16",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "坡口角度（°）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:28:37:520",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "3srabq9pl4MplsoDzPiy1x",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "3srabq9pl4MplsoDzPiy1x",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "GROOVE_F",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "ROUNDNESS_F": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "圆度",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "130",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "17",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "圆度（‰）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:28:37:586",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "08gnRCC9t10Xbl4PAcprc4",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "08gnRCC9t10Xbl4PAcprc4",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "ROUNDNESS_F",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "BLUNT_EDGE_F": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "钝边(mm)",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "140",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "18",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "钝边（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:28:57:318",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1IWsjIpFVf5HBbnnyWguiX",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1IWsjIpFVf5HBbnnyWguiX",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "BLUNT_EDGE_F",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "BACK_PIPE_SLID": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "145",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "2",
+      "_ROWNUM_": "19",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "后钢管",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "2",
+      "ITEM_TYPE": "3",
+      "S_MTIME": "2014-08-25 16:22:46:053",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "20GZH9UPt2S95uRG4k6tdko",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "0",
+      "_PK_": "20GZH9UPt2S95uRG4k6tdko",
+      "ITEM_LIST_ALIGN": "",
+      "ITEM_INPUT_TYPE": "10",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "2",
+      "ITEM_CODE": "BACK_PIPE_SLID",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "BACK_EQUIPMENT_NO": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "后管号",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "150",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "20",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "{SUBSERV:\"MDC_XL_PIPE\"}",
+      "ITEM_NAME": "后管号",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:08:05:678",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "3jQkV0ReVha4HCAQkXluKOSr",
+      "ITEM_LIST_FLAG": "1",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PIPE",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "3jQkV0ReVha4HCAQkXluKOSr",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "BACK_EQUIPMENT_NO",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": "CPDCP_PIPE"
+    },
+    "GROOVE2_B": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "坡口角度(°)",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "170",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "22",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "坡口角度（°）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:29:11:198",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0yhaaJ19p9XrVB89Jo1Dr2U",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0yhaaJ19p9XrVB89Jo1Dr2U",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "GROOVE2_B",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "ROUNDNESS_B": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "圆度",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "180",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "23",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "圆度（‰）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-09-10 15:52:53:525",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0TA8Zv2FB5n8Tlpvo20d99",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0TA8Zv2FB5n8Tlpvo20d99",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "ROUNDNESS_B",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "BLUNT_EDGE_B": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "钝边(mm)",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "190",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "24",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "钝边（mm）",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 17:29:11:246",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "09GxCeIv18GWgNBCYVjflI",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "11,1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "09GxCeIv18GWgNBCYVjflI",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "BLUNT_EDGE_B",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "ZDY_BASE_DATA": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "195",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "2",
+      "_ROWNUM_": "25",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "基础数据",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "2",
+      "ITEM_TYPE": "3",
+      "S_MTIME": "2014-08-25 16:26:10:100",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1aFcGEK9lJcxoryJ0JERAtP",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "0",
+      "_PK_": "1aFcGEK9lJcxoryJ0JERAtP",
+      "ITEM_LIST_ALIGN": "0",
+      "ITEM_INPUT_TYPE": "10",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "2",
+      "ITEM_CODE": "ZDY_BASE_DATA",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "PROJECT": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "工程名称",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "210",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "26",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "工程名称",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:14:01:121",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0hba9dkkl8RrLzWbsgmhlTp",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PROJECT",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "256",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "1",
+      "_PK_": "0hba9dkkl8RrLzWbsgmhlTp",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "2",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "PROJECT",
+      "ITEM_INPUT_DEFAULT": "@PROJECT@",
+      "ITEM_INPUT_CONFIG": "CPDCP_PROJECT"
+    },
+    "CONTRACTOR": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "施工单位名称",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "220",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "27",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "施工单位名称",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:14:15:588",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "33soxyGYh1jr59FZCzs0QN",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PROJECT_ORGANIZATION",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "33soxyGYh1jr59FZCzs0QN",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "CONTRACTOR",
+      "ITEM_INPUT_DEFAULT": "@CURR_SGDW@",
+      "ITEM_INPUT_CONFIG": "CPDCP_PROJECT_ORGANIZATION"
+    },
+    "CONSTRUCTION_TEAM": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "施工机组名称",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "230",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "28",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "施工机组名称",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:14:25:911",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "3ctd38fcdfjbpRuHllJyKfC",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PROJECT_ORGANIZATION",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "256",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "3ctd38fcdfjbpRuHllJyKfC",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "CONSTRUCTION_TEAM",
+      "ITEM_INPUT_DEFAULT": "@CURR_SGJZ@",
+      "ITEM_INPUT_CONFIG": "CPDCP_PROJECT_ORGANIZATION"
+    },
+    "TECHQULI": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "技术员\/质量员",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "240",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "1",
+      "ITEM_INPUT_MODE": "3",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "29",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "技术员\/质量员",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:14:39:644",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1aG3IlBg75er88ej6g8BOsw",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "CPDCP_PROJECT_ORGANIZERS_ALL",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1aG3IlBg75er88ej6g8BOsw",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "TECHQULI",
+      "ITEM_INPUT_DEFAULT": "@CURR_ORGID@",
+      "ITEM_INPUT_CONFIG": "CPDCP_PROJECT_ORGANIZERS_ALL"
+    },
+    "WORK_DATE": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "1",
+      "ITEM_LIST_ORDER": "250",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "4",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "30",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "日期",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:05:57:500",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2gg4Svf7kVaNqJCuz7HR75e5",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "30",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2gg4Svf7kVaNqJCuz7HR75e5",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "WORK_DATE",
+      "ITEM_INPUT_DEFAULT": "@DATE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "REMARK": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "260",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "31",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "备注",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 16:35:57:328",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1ixstJPikF0nWyEP9zkzcdO",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "512",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "2",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1ixstJPikF0nWyEP9zkzcdO",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "5",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "REMARK",
+      "ITEM_INPUT_DEFAULT": "",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "UPLOAD_FLAG": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "UPLOAD_FLAG",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "270",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "32",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "UPLOAD_FLAG",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 16:29:28:350",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "0tt79FUNZbCHQ3MGir3V7C",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "1",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "0tt79FUNZbCHQ3MGir3V7C",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "UPLOAD_FLAG",
+      "ITEM_INPUT_DEFAULT": "0",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_PUBLIC": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "公共标志，1：是；2：否",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "280",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "33",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "公共标志",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:210",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2NHRKhMvN7paAlVlOdxmyA",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "4",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2NHRKhMvN7paAlVlOdxmyA",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_PUBLIC",
+      "ITEM_INPUT_DEFAULT": "2",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_FLAG": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "启用标志，1：是；2：否",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "290",
+      "ITEM_FIELD_TYPE": "NUM",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "34",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "启用标志",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:273",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2JcG9MdMFe58ffnagioAmI2",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "4",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2JcG9MdMFe58ffnagioAmI2",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_FLAG",
+      "ITEM_INPUT_DEFAULT": "1",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_CMPY": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "所属公司",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "300",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "35",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "所属公司",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:328",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "04Xe7DQV18EW8LC0M22iOR",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "04Xe7DQV18EW8LC0M22iOR",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_CMPY",
+      "ITEM_INPUT_DEFAULT": "@CMPY_CODE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_DEPT": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "所属部门",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "310",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "36",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "所属部门",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:374",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "3yyMlIiVdewpOQA9VF8Z7a",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "3yyMlIiVdewpOQA9VF8Z7a",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_DEPT",
+      "ITEM_INPUT_DEFAULT": "@DEPT_CODE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "STORAGE_TIME": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "入库时间",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "320",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "37",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "入库时间",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2015-04-08 16:12:24:715",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "2r66iLee0RcS8wFmv0oypuY",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "1",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "2r66iLee0RcS8wFmv0oypuY",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "STORAGE_TIME",
+      "ITEM_INPUT_DEFAULT": "@DATE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_USER": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "创建人",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "320",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "38",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "创建人",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:424",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1Vhngyzkd1PH6JoLWAxk0Tu",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "40",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1Vhngyzkd1PH6JoLWAxk0Tu",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_USER",
+      "ITEM_INPUT_DEFAULT": "@USER_CODE@",
+      "ITEM_INPUT_CONFIG": ""
+    },
+    "S_MTIME": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ITEM_CARD_WIDTH": "0",
+      "ITEM_LOG_FLAG": "2",
+      "ITEM_TIP": "",
+      "ITEM_ORDER_CODES": "",
+      "ITEM_CARD_FORMAT": "",
+      "ITEM_LIST_STYLE": "",
+      "ITEM_VALIDATE": "",
+      "ITEM_MEMO": "更新时间",
+      "ITEM_VALIDATE_HINT": "",
+      "ITEM_NOTNULL": "2",
+      "ITEM_LIST_ORDER": "330",
+      "ITEM_FIELD_TYPE": "STR",
+      "ITEM_SEARCH_FLAG": "2",
+      "ITEM_INPUT_MODE": "1",
+      "ITEM_USER_FLAG": "",
+      "_ROWNUM_": "39",
+      "ITEM_LIST_WIDTH": "0",
+      "ITEM_EXPTENDS": "",
+      "ITEM_NAME": "更新时间",
+      "ITEM_NOTNULL_SCRIPT": "",
+      "ITEM_CARD_ORDER": "",
+      "ITEM_CARD_COLS": "1",
+      "ITEM_SUM_FLAG": "",
+      "ITEM_TYPE": "1",
+      "S_MTIME": "2014-08-25 14:02:45:470",
+      "ITEM_LIST_FORMAT": "",
+      "ITEM_ID": "1t0zUAPrtbZHq8GbDpoqgg",
+      "ITEM_LIST_FLAG": "2",
+      "ITEM_CARD_DISABLE": "2",
+      "ITEM_CARD_ROWS": "1",
+      "ITEM_READONLY": "2",
+      "ITEM_HIDDEN_SCRIPT": "",
+      "ITEM_LIST_EDIT": "2",
+      "DICT_ID": "",
+      "ITEM_READONLY_SCRIPT": "",
+      "ITEM_FIELD_LENGTH": "30",
+      "S_FLAG": "1",
+      "ITEM_CARD_LINK": "",
+      "ITEM_HIDDEN": "1",
+      "ITEM_CARD_STYLE": "",
+      "ITEM_UNIQUE_GROUP": "",
+      "_PK_": "1t0zUAPrtbZHq8GbDpoqgg",
+      "ITEM_LIST_ALIGN": "1",
+      "ITEM_INPUT_TYPE": "1",
+      "ITEM_LIST_LINK": "",
+      "ITEM_INPUT_FLAG": "2",
+      "ITEM_MOBILE_TYPE": "3",
+      "ITEM_LABEL_HIDDEN": "",
+      "ITEM_CODE": "S_MTIME",
+      "ITEM_INPUT_DEFAULT": "@DATETIME_TS@",
+      "ITEM_INPUT_CONFIG": ""
+    }
+  },
+  "SERV_MIND_LABLE_FLAG": "",
+  "SERV_MOBILE_JS": "",
+  "SERV_SRC_ID": "CPDCP_PREHEAT_WELD_GROUP",
+  "SERV_RED_HEAD": "",
+  "SERV_LIST_LOAD_NAMES": "",
+  "DICTS": {
+    "CPDCP_PROJECT": [
+      {
+        "PROJ_CODE": "ADX",
+        "NAME": "铁大线安全改造工程（鞍山-大连原油管道工程）",
+        "ID": "21c9y6QRt0F86MUvmxvTT3",
+        "FLAG": "1"
+      }
+    ],
+    "CPDCP_PIPE": [
+      {
+        "NAME": "HY140012100295",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "14303468",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "HY140012100295",
+        "ID": "HY140012100295",
+        "ANTI_LEVEL": "",
+        "DEGREE": "X60",
+        "FLAG": "",
+        "LENGTH": "11.99"
+      },
+      {
+        "NAME": "100005",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100005",
+        "ID": "100005",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.56"
+      },
+      {
+        "NAME": "100008",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100008.0",
+        "ID": "100008",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.48"
+      },
+      {
+        "NAME": "100006",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100006.0",
+        "ID": "100006",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.47"
+      },
+      {
+        "NAME": "100009",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100009.0",
+        "ID": "100009",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.48"
+      },
+      {
+        "NAME": "100007",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100007.0",
+        "ID": "100007",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.48"
+      },
+      {
+        "NAME": "100010",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100010.0",
+        "ID": "100010",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.47"
+      },
+      {
+        "NAME": "CZ-BSS123423",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "14303464",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "HY140012100025",
+        "ID": "CZ-BSS123423",
+        "ANTI_LEVEL": "",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "11.97"
+      },
+      {
+        "NAME": "CZ-BSS123356",
+        "THICKNESS": "0",
+        "FURNACE_NO": "",
+        "SPEC": "",
+        "ANTI_TYPE": "",
+        "MATERIAL": "",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "CZ-BSS123356",
+        "ANTI_LEVEL": "",
+        "DEGREE": "",
+        "FLAG": "1",
+        "LENGTH": "0"
+      },
+      {
+        "NAME": "CZ-BSS223456",
+        "THICKNESS": "0",
+        "FURNACE_NO": "",
+        "SPEC": "",
+        "ANTI_TYPE": "",
+        "MATERIAL": "",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "CZ-BSS223456",
+        "ANTI_LEVEL": "",
+        "DEGREE": "",
+        "FLAG": "1",
+        "LENGTH": "0"
+      },
+      {
+        "NAME": "CZ-BSS123456",
+        "THICKNESS": "2",
+        "FURNACE_NO": "撒旦",
+        "SPEC": "是否",
+        "ANTI_TYPE": "",
+        "MATERIAL": "钢管",
+        "DIAMETER": "23",
+        "ANTI_NO": "",
+        "ID": "CZ-BSS123456",
+        "ANTI_LEVEL": "",
+        "DEGREE": "海豚音",
+        "FLAG": "1",
+        "LENGTH": "54"
+      },
+      {
+        "NAME": "100001",
+        "THICKNESS": "7.1",
+        "FURNACE_NO": "143D4325",
+        "SPEC": "Ф508×7.1",
+        "ANTI_TYPE": "FBE保温管",
+        "MATERIAL": "L415M",
+        "DIAMETER": "508",
+        "ANTI_NO": "100001",
+        "ID": "100001",
+        "ANTI_LEVEL": "JIAQIANGJI",
+        "DEGREE": "X60",
+        "FLAG": "1",
+        "LENGTH": "10.48"
+      },
+      {
+        "NAME": "TEST000001",
+        "THICKNESS": "6",
+        "FURNACE_NO": "3",
+        "SPEC": "2",
+        "ANTI_TYPE": "11",
+        "MATERIAL": "1",
+        "DIAMETER": "5",
+        "ANTI_NO": "10",
+        "ID": "TEST000001",
+        "ANTI_LEVEL": "",
+        "DEGREE": "4",
+        "FLAG": "1",
+        "LENGTH": "7"
+      },
+      {
+        "NAME": "",
+        "THICKNESS": "0",
+        "FURNACE_NO": "",
+        "SPEC": "",
+        "ANTI_TYPE": "",
+        "MATERIAL": "",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "",
+        "ANTI_LEVEL": "",
+        "DEGREE": "",
+        "FLAG": "1",
+        "LENGTH": "0"
+      },
+      {
+        "NAME": "test002",
+        "THICKNESS": "0",
+        "FURNACE_NO": "1",
+        "SPEC": "1",
+        "ANTI_TYPE": "",
+        "MATERIAL": "1",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "test002",
+        "ANTI_LEVEL": "",
+        "DEGREE": "1",
+        "FLAG": "1",
+        "LENGTH": "0"
+      },
+      {
+        "NAME": "test001",
+        "THICKNESS": "0",
+        "FURNACE_NO": "",
+        "SPEC": "",
+        "ANTI_TYPE": "",
+        "MATERIAL": "",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "test001",
+        "ANTI_LEVEL": "",
+        "DEGREE": "",
+        "FLAG": "1",
+        "LENGTH": "0"
+      },
+      {
+        "NAME": "test003",
+        "THICKNESS": "0",
+        "FURNACE_NO": "",
+        "SPEC": "",
+        "ANTI_TYPE": "",
+        "MATERIAL": "",
+        "DIAMETER": "0",
+        "ANTI_NO": "",
+        "ID": "test003",
+        "ANTI_LEVEL": "",
+        "DEGREE": "",
+        "FLAG": "1",
+        "LENGTH": "0"
+      }
+    ],
+    "CPDCP_XL_PEG": [
+      {
+        "NAME": "CZ-A001",
+        "ID": "CZ-A001"
+      },
+      {
+        "NAME": "CZ-A0012",
+        "ID": "CZ-A0012"
+      },
+      {
+        "NAME": "CZ-A0013",
+        "ID": "CZ-A0013"
+      },
+      {
+        "NAME": "CZ-AA001",
+        "ID": "CZ-AA001"
+      },
+      {
+        "NAME": "CZ-AA002",
+        "ID": "CZ-AA002"
+      },
+      {
+        "NAME": "CZ-AA003",
+        "ID": "CZ-AA003"
+      },
+      {
+        "NAME": "CZ-AA004",
+        "ID": "CZ-AA004"
+      },
+      {
+        "NAME": "CZ-AA005",
+        "ID": "CZ-AA005"
+      },
+      {
+        "NAME": "CZ-AA008",
+        "ID": "CZ-AA008"
+      },
+      {
+        "NAME": "DSQ1001",
+        "ID": "DSQ1001"
+      },
+      {
+        "NAME": "DSQ1002",
+        "ID": "DSQ1002"
+      },
+      {
+        "NAME": "DSQ1003",
+        "ID": "DSQ1003"
+      },
+      {
+        "NAME": "DSQ1004",
+        "ID": "DSQ1004"
+      },
+      {
+        "NAME": "DSQ1005",
+        "ID": "DSQ1005"
+      },
+      {
+        "NAME": "DSQ1006",
+        "ID": "DSQ1006"
+      },
+      {
+        "NAME": "DSQ1007",
+        "ID": "DSQ1007"
+      },
+      {
+        "NAME": "DSQ1008",
+        "ID": "DSQ1008"
+      },
+      {
+        "NAME": "DSQ1009",
+        "ID": "DSQ1009"
+      },
+      {
+        "NAME": "DSQ1010",
+        "ID": "DSQ1010"
+      },
+      {
+        "NAME": "DSQ1011",
+        "ID": "DSQ1011"
+      },
+      {
+        "NAME": "DSQ1012",
+        "ID": "DSQ1012"
+      },
+      {
+        "NAME": "DSQ1013",
+        "ID": "DSQ1013"
+      },
+      {
+        "NAME": "DSQ1014",
+        "ID": "DSQ1014"
+      },
+      {
+        "NAME": "DSQ1015",
+        "ID": "DSQ1015"
+      },
+      {
+        "NAME": "DSQ1016",
+        "ID": "DSQ1016"
+      },
+      {
+        "NAME": "DSQ1016+1",
+        "ID": "DSQ1016+1"
+      },
+      {
+        "NAME": "DSQ1017",
+        "ID": "DSQ1017"
+      },
+      {
+        "NAME": "DSQ1018",
+        "ID": "DSQ1018"
+      },
+      {
+        "NAME": "DSQ1019",
+        "ID": "DSQ1019"
+      },
+      {
+        "NAME": "DSQ1020",
+        "ID": "DSQ1020"
+      },
+      {
+        "NAME": "DSQ1021",
+        "ID": "DSQ1021"
+      },
+      {
+        "NAME": "DSQ1022",
+        "ID": "DSQ1022"
+      },
+      {
+        "NAME": "DSQ1023",
+        "ID": "DSQ1023"
+      },
+      {
+        "NAME": "DSQ1024",
+        "ID": "DSQ1024"
+      },
+      {
+        "NAME": "DSQ1025",
+        "ID": "DSQ1025"
+      },
+      {
+        "NAME": "DSQ1026",
+        "ID": "DSQ1026"
+      },
+      {
+        "NAME": "DSQ1027",
+        "ID": "DSQ1027"
+      },
+      {
+        "NAME": "DSQ1028",
+        "ID": "DSQ1028"
+      },
+      {
+        "NAME": "DSQ1029",
+        "ID": "DSQ1029"
+      },
+      {
+        "NAME": "DSQ1030",
+        "ID": "DSQ1030"
+      },
+      {
+        "NAME": "DSQ1031",
+        "ID": "DSQ1031"
+      },
+      {
+        "NAME": "DSQ1032",
+        "ID": "DSQ1032"
+      },
+      {
+        "NAME": "DSQ1033",
+        "ID": "DSQ1033"
+      },
+      {
+        "NAME": "DSQ1034",
+        "ID": "DSQ1034"
+      },
+      {
+        "NAME": "DSQ1035",
+        "ID": "DSQ1035"
+      },
+      {
+        "NAME": "DSQ1036",
+        "ID": "DSQ1036"
+      },
+      {
+        "NAME": "DSQ1037",
+        "ID": "DSQ1037"
+      },
+      {
+        "NAME": "DSQ1038",
+        "ID": "DSQ1038"
+      },
+      {
+        "NAME": "DSQ1039",
+        "ID": "DSQ1039"
+      },
+      {
+        "NAME": "DSQ1040",
+        "ID": "DSQ1040"
+      },
+      {
+        "NAME": "DSQ1041",
+        "ID": "DSQ1041"
+      },
+      {
+        "NAME": "DSQ1042",
+        "ID": "DSQ1042"
+      },
+      {
+        "NAME": "DSQ1043",
+        "ID": "DSQ1043"
+      },
+      {
+        "NAME": "DSQ1044",
+        "ID": "DSQ1044"
+      },
+      {
+        "NAME": "DSQ1045",
+        "ID": "DSQ1045"
+      },
+      {
+        "NAME": "DSQ1045-1",
+        "ID": "DSQ1045-1"
+      },
+      {
+        "NAME": "DSQ1046",
+        "ID": "DSQ1046"
+      },
+      {
+        "NAME": "DSQ1047",
+        "ID": "DSQ1047"
+      },
+      {
+        "NAME": "DSQ1048",
+        "ID": "DSQ1048"
+      },
+      {
+        "NAME": "DSQ1049",
+        "ID": "DSQ1049"
+      },
+      {
+        "NAME": "DSQ1050",
+        "ID": "DSQ1050"
+      },
+      {
+        "NAME": "DSQ1051",
+        "ID": "DSQ1051"
+      },
+      {
+        "NAME": "DSQ1052",
+        "ID": "DSQ1052"
+      },
+      {
+        "NAME": "DSQ1053",
+        "ID": "DSQ1053"
+      },
+      {
+        "NAME": "DSQ1054",
+        "ID": "DSQ1054"
+      },
+      {
+        "NAME": "DSQ1055",
+        "ID": "DSQ1055"
+      },
+      {
+        "NAME": "DSQ1056",
+        "ID": "DSQ1056"
+      },
+      {
+        "NAME": "DSQ1057",
+        "ID": "DSQ1057"
+      },
+      {
+        "NAME": "DSQ1058",
+        "ID": "DSQ1058"
+      },
+      {
+        "NAME": "DSQ1059",
+        "ID": "DSQ1059"
+      },
+      {
+        "NAME": "DSQ1060",
+        "ID": "DSQ1060"
+      },
+      {
+        "NAME": "DSQ2001",
+        "ID": "DSQ2001"
+      },
+      {
+        "NAME": "DSQ2002",
+        "ID": "DSQ2002"
+      },
+      {
+        "NAME": "DSQ2003",
+        "ID": "DSQ2003"
+      },
+      {
+        "NAME": "DSQ2004",
+        "ID": "DSQ2004"
+      },
+      {
+        "NAME": "DSQ2005",
+        "ID": "DSQ2005"
+      },
+      {
+        "NAME": "GZ1001",
+        "ID": "GZ1001"
+      },
+      {
+        "NAME": "GZ1002",
+        "ID": "GZ1002"
+      },
+      {
+        "NAME": "GZ1003",
+        "ID": "GZ1003"
+      },
+      {
+        "NAME": "GZ1004",
+        "ID": "GZ1004"
+      },
+      {
+        "NAME": "GZ1005",
+        "ID": "GZ1005"
+      },
+      {
+        "NAME": "GZ1006",
+        "ID": "GZ1006"
+      },
+      {
+        "NAME": "GZ1007",
+        "ID": "GZ1007"
+      },
+      {
+        "NAME": "GZ1008",
+        "ID": "GZ1008"
+      },
+      {
+        "NAME": "GZ1009",
+        "ID": "GZ1009"
+      },
+      {
+        "NAME": "GZ1010",
+        "ID": "GZ1010"
+      },
+      {
+        "NAME": "GZ1011",
+        "ID": "GZ1011"
+      },
+      {
+        "NAME": "GZ1012",
+        "ID": "GZ1012"
+      },
+      {
+        "NAME": "GZ1013",
+        "ID": "GZ1013"
+      },
+      {
+        "NAME": "GZ1014",
+        "ID": "GZ1014"
+      },
+      {
+        "NAME": "GZ1015",
+        "ID": "GZ1015"
+      },
+      {
+        "NAME": "GZ1016",
+        "ID": "GZ1016"
+      },
+      {
+        "NAME": "GZ1017",
+        "ID": "GZ1017"
+      },
+      {
+        "NAME": "GZ1018",
+        "ID": "GZ1018"
+      },
+      {
+        "NAME": "GZ1019",
+        "ID": "GZ1019"
+      },
+      {
+        "NAME": "GZ1020",
+        "ID": "GZ1020"
+      },
+      {
+        "NAME": "GZ2001",
+        "ID": "GZ2001"
+      },
+      {
+        "NAME": "GZ2002",
+        "ID": "GZ2002"
+      },
+      {
+        "NAME": "GZ2003",
+        "ID": "GZ2003"
+      },
+      {
+        "NAME": "GZ2004",
+        "ID": "GZ2004"
+      },
+      {
+        "NAME": "GZ2005",
+        "ID": "GZ2005"
+      },
+      {
+        "NAME": "GZ2006",
+        "ID": "GZ2006"
+      },
+      {
+        "NAME": "GZ2007",
+        "ID": "GZ2007"
+      },
+      {
+        "NAME": "GZ2008",
+        "ID": "GZ2008"
+      },
+      {
+        "NAME": "GZ2009",
+        "ID": "GZ2009"
+      },
+      {
+        "NAME": "GZ2010",
+        "ID": "GZ2010"
+      },
+      {
+        "NAME": "GZ2011",
+        "ID": "GZ2011"
+      },
+      {
+        "NAME": "GZ2012",
+        "ID": "GZ2012"
+      },
+      {
+        "NAME": "GZ2013",
+        "ID": "GZ2013"
+      },
+      {
+        "NAME": "GZ2014",
+        "ID": "GZ2014"
+      },
+      {
+        "NAME": "GZ2015",
+        "ID": "GZ2015"
+      },
+      {
+        "NAME": "GZ2016",
+        "ID": "GZ2016"
+      },
+      {
+        "NAME": "GZ2017",
+        "ID": "GZ2017"
+      },
+      {
+        "NAME": "GZ2018",
+        "ID": "GZ2018"
+      },
+      {
+        "NAME": "GZ2019",
+        "ID": "GZ2019"
+      },
+      {
+        "NAME": "GZ2020",
+        "ID": "GZ2020"
+      },
+      {
+        "NAME": "GZ2021",
+        "ID": "GZ2021"
+      },
+      {
+        "NAME": "GZ2022",
+        "ID": "GZ2022"
+      },
+      {
+        "NAME": "GZ2023",
+        "ID": "GZ2023"
+      },
+      {
+        "NAME": "GZ2024",
+        "ID": "GZ2024"
+      },
+      {
+        "NAME": "GZ2025",
+        "ID": "GZ2025"
+      },
+      {
+        "NAME": "GZ2026",
+        "ID": "GZ2026"
+      },
+      {
+        "NAME": "GZ2027",
+        "ID": "GZ2027"
+      },
+      {
+        "NAME": "GZ2028",
+        "ID": "GZ2028"
+      },
+      {
+        "NAME": "GZ2029",
+        "ID": "GZ2029"
+      },
+      {
+        "NAME": "GZ2030",
+        "ID": "GZ2030"
+      },
+      {
+        "NAME": "GZ2031",
+        "ID": "GZ2031"
+      },
+      {
+        "NAME": "GZ2032",
+        "ID": "GZ2032"
+      },
+      {
+        "NAME": "GZ3001",
+        "ID": "GZ3001"
+      },
+      {
+        "NAME": "GZ3002",
+        "ID": "GZ3002"
+      },
+      {
+        "NAME": "GZ3003",
+        "ID": "GZ3003"
+      },
+      {
+        "NAME": "GZ3004",
+        "ID": "GZ3004"
+      },
+      {
+        "NAME": "GZ3005",
+        "ID": "GZ3005"
+      },
+      {
+        "NAME": "GZ3006",
+        "ID": "GZ3006"
+      },
+      {
+        "NAME": "GZ3006-1",
+        "ID": "GZ3006-1"
+      },
+      {
+        "NAME": "GZ3006-2",
+        "ID": "GZ3006-2"
+      },
+      {
+        "NAME": "GZ3007",
+        "ID": "GZ3007"
+      },
+      {
+        "NAME": "GZ3008",
+        "ID": "GZ3008"
+      },
+      {
+        "NAME": "GZ3009",
+        "ID": "GZ3009"
+      },
+      {
+        "NAME": "GZ3010",
+        "ID": "GZ3010"
+      },
+      {
+        "NAME": "GZ3011",
+        "ID": "GZ3011"
+      },
+      {
+        "NAME": "GZ3012",
+        "ID": "GZ3012"
+      },
+      {
+        "NAME": "GZ3013",
+        "ID": "GZ3013"
+      },
+      {
+        "NAME": "GZ3014",
+        "ID": "GZ3014"
+      },
+      {
+        "NAME": "GZ3015",
+        "ID": "GZ3015"
+      },
+      {
+        "NAME": "GZ3016",
+        "ID": "GZ3016"
+      },
+      {
+        "NAME": "GZ3017",
+        "ID": "GZ3017"
+      },
+      {
+        "NAME": "GZ3018",
+        "ID": "GZ3018"
+      },
+      {
+        "NAME": "GZ3019",
+        "ID": "GZ3019"
+      },
+      {
+        "NAME": "GZ3020",
+        "ID": "GZ3020"
+      },
+      {
+        "NAME": "GZ3021",
+        "ID": "GZ3021"
+      },
+      {
+        "NAME": "GZ3022",
+        "ID": "GZ3022"
+      },
+      {
+        "NAME": "GZ3023",
+        "ID": "GZ3023"
+      },
+      {
+        "NAME": "GZ3024",
+        "ID": "GZ3024"
+      },
+      {
+        "NAME": "GZ3025",
+        "ID": "GZ3025"
+      },
+      {
+        "NAME": "GZ3026",
+        "ID": "GZ3026"
+      },
+      {
+        "NAME": "GZ3027",
+        "ID": "GZ3027"
+      },
+      {
+        "NAME": "GZ3028",
+        "ID": "GZ3028"
+      },
+      {
+        "NAME": "GZ3029",
+        "ID": "GZ3029"
+      },
+      {
+        "NAME": "GZ3030",
+        "ID": "GZ3030"
+      },
+      {
+        "NAME": "GZ3031",
+        "ID": "GZ3031"
+      },
+      {
+        "NAME": "GZ3032",
+        "ID": "GZ3032"
+      },
+      {
+        "NAME": "GZ3033",
+        "ID": "GZ3033"
+      },
+      {
+        "NAME": "GZ3034",
+        "ID": "GZ3034"
+      },
+      {
+        "NAME": "GZ3035",
+        "ID": "GZ3035"
+      },
+      {
+        "NAME": "GZ3036",
+        "ID": "GZ3036"
+      },
+      {
+        "NAME": "GZ3037",
+        "ID": "GZ3037"
+      },
+      {
+        "NAME": "GZ3038",
+        "ID": "GZ3038"
+      },
+      {
+        "NAME": "GZ3039",
+        "ID": "GZ3039"
+      },
+      {
+        "NAME": "GZ3040",
+        "ID": "GZ3040"
+      },
+      {
+        "NAME": "GZ3041",
+        "ID": "GZ3041"
+      },
+      {
+        "NAME": "GZ3042",
+        "ID": "GZ3042"
+      },
+      {
+        "NAME": "GZ3043",
+        "ID": "GZ3043"
+      },
+      {
+        "NAME": "GZ3044",
+        "ID": "GZ3044"
+      },
+      {
+        "NAME": "GZ3045",
+        "ID": "GZ3045"
+      },
+      {
+        "NAME": "GZ3046",
+        "ID": "GZ3046"
+      },
+      {
+        "NAME": "GZ3047",
+        "ID": "GZ3047"
+      },
+      {
+        "NAME": "GZ3048",
+        "ID": "GZ3048"
+      },
+      {
+        "NAME": "GZ3049",
+        "ID": "GZ3049"
+      },
+      {
+        "NAME": "GZ3050",
+        "ID": "GZ3050"
+      },
+      {
+        "NAME": "GZ3050-1",
+        "ID": "GZ3050-1"
+      },
+      {
+        "NAME": "GZ3050-2",
+        "ID": "GZ3050-2"
+      },
+      {
+        "NAME": "GZ3051",
+        "ID": "GZ3051"
+      },
+      {
+        "NAME": "GZ3052",
+        "ID": "GZ3052"
+      },
+      {
+        "NAME": "GZ3053",
+        "ID": "GZ3053"
+      },
+      {
+        "NAME": "GZ3054",
+        "ID": "GZ3054"
+      },
+      {
+        "NAME": "GZ3055",
+        "ID": "GZ3055"
+      },
+      {
+        "NAME": "GZ3056",
+        "ID": "GZ3056"
+      },
+      {
+        "NAME": "GZ3057",
+        "ID": "GZ3057"
+      },
+      {
+        "NAME": "GZ3058",
+        "ID": "GZ3058"
+      },
+      {
+        "NAME": "GZ3059",
+        "ID": "GZ3059"
+      },
+      {
+        "NAME": "GZ3060",
+        "ID": "GZ3060"
+      },
+      {
+        "NAME": "GZ3061",
+        "ID": "GZ3061"
+      },
+      {
+        "NAME": "GZ3061-1",
+        "ID": "GZ3061-1"
+      },
+      {
+        "NAME": "GZ3061-2",
+        "ID": "GZ3061-2"
+      },
+      {
+        "NAME": "GZ3062",
+        "ID": "GZ3062"
+      },
+      {
+        "NAME": "GZ3063",
+        "ID": "GZ3063"
+      },
+      {
+        "NAME": "GZ3064",
+        "ID": "GZ3064"
+      },
+      {
+        "NAME": "GZ3065",
+        "ID": "GZ3065"
+      },
+      {
+        "NAME": "GZ3066",
+        "ID": "GZ3066"
+      },
+      {
+        "NAME": "GZ3067",
+        "ID": "GZ3067"
+      },
+      {
+        "NAME": "GZ3068",
+        "ID": "GZ3068"
+      },
+      {
+        "NAME": "GZ3069",
+        "ID": "GZ3069"
+      },
+      {
+        "NAME": "GZ3070",
+        "ID": "GZ3070"
+      },
+      {
+        "NAME": "GZ3071",
+        "ID": "GZ3071"
+      },
+      {
+        "NAME": "GZ3072",
+        "ID": "GZ3072"
+      },
+      {
+        "NAME": "GZ3073",
+        "ID": "GZ3073"
+      },
+      {
+        "NAME": "GZ3074",
+        "ID": "GZ3074"
+      },
+      {
+        "NAME": "GZ3075",
+        "ID": "GZ3075"
+      },
+      {
+        "NAME": "GZ3076",
+        "ID": "GZ3076"
+      },
+      {
+        "NAME": "GZ3077",
+        "ID": "GZ3077"
+      },
+      {
+        "NAME": "GZ3078",
+        "ID": "GZ3078"
+      },
+      {
+        "NAME": "GZ3079",
+        "ID": "GZ3079"
+      },
+      {
+        "NAME": "GZ3080",
+        "ID": "GZ3080"
+      },
+      {
+        "NAME": "GZ3081",
+        "ID": "GZ3081"
+      },
+      {
+        "NAME": "GZ3082",
+        "ID": "GZ3082"
+      },
+      {
+        "NAME": "GZ3083",
+        "ID": "GZ3083"
+      },
+      {
+        "NAME": "GZ3084",
+        "ID": "GZ3084"
+      },
+      {
+        "NAME": "GZ3085",
+        "ID": "GZ3085"
+      },
+      {
+        "NAME": "GZ3086",
+        "ID": "GZ3086"
+      },
+      {
+        "NAME": "GZ3087",
+        "ID": "GZ3087"
+      },
+      {
+        "NAME": "GZ3088",
+        "ID": "GZ3088"
+      },
+      {
+        "NAME": "GZ3089",
+        "ID": "GZ3089"
+      },
+      {
+        "NAME": "GZ3090",
+        "ID": "GZ3090"
+      },
+      {
+        "NAME": "GZ3091",
+        "ID": "GZ3091"
+      },
+      {
+        "NAME": "GZ3092",
+        "ID": "GZ3092"
+      },
+      {
+        "NAME": "GZ3093",
+        "ID": "GZ3093"
+      },
+      {
+        "NAME": "GZ3094",
+        "ID": "GZ3094"
+      },
+      {
+        "NAME": "GZ3095",
+        "ID": "GZ3095"
+      },
+      {
+        "NAME": "GZ3096",
+        "ID": "GZ3096"
+      },
+      {
+        "NAME": "GZ3097",
+        "ID": "GZ3097"
+      },
+      {
+        "NAME": "GZ3098",
+        "ID": "GZ3098"
+      },
+      {
+        "NAME": "GZ3099",
+        "ID": "GZ3099"
+      },
+      {
+        "NAME": "GZ3100",
+        "ID": "GZ3100"
+      },
+      {
+        "NAME": "GZ3101",
+        "ID": "GZ3101"
+      },
+      {
+        "NAME": "GZ3102",
+        "ID": "GZ3102"
+      },
+      {
+        "NAME": "GZ3103",
+        "ID": "GZ3103"
+      },
+      {
+        "NAME": "GZ3104",
+        "ID": "GZ3104"
+      },
+      {
+        "NAME": "GZ3105",
+        "ID": "GZ3105"
+      },
+      {
+        "NAME": "GZ3106",
+        "ID": "GZ3106"
+      },
+      {
+        "NAME": "GZ3107",
+        "ID": "GZ3107"
+      },
+      {
+        "NAME": "GZ3108",
+        "ID": "GZ3108"
+      },
+      {
+        "NAME": "GZ3109",
+        "ID": "GZ3109"
+      },
+      {
+        "NAME": "GZ3110",
+        "ID": "GZ3110"
+      },
+      {
+        "NAME": "GZ3111",
+        "ID": "GZ3111"
+      },
+      {
+        "NAME": "GZ3112",
+        "ID": "GZ3112"
+      },
+      {
+        "NAME": "GZ3113",
+        "ID": "GZ3113"
+      },
+      {
+        "NAME": "GZ3114",
+        "ID": "GZ3114"
+      },
+      {
+        "NAME": "GZ3115",
+        "ID": "GZ3115"
+      },
+      {
+        "NAME": "GZ3116",
+        "ID": "GZ3116"
+      },
+      {
+        "NAME": "GZ3117",
+        "ID": "GZ3117"
+      },
+      {
+        "NAME": "GZ3118",
+        "ID": "GZ3118"
+      },
+      {
+        "NAME": "GZ3119",
+        "ID": "GZ3119"
+      },
+      {
+        "NAME": "GZ3120",
+        "ID": "GZ3120"
+      },
+      {
+        "NAME": "GZ3121",
+        "ID": "GZ3121"
+      },
+      {
+        "NAME": "GZ3122",
+        "ID": "GZ3122"
+      },
+      {
+        "NAME": "GZ3123",
+        "ID": "GZ3123"
+      },
+      {
+        "NAME": "GZ3124",
+        "ID": "GZ3124"
+      },
+      {
+        "NAME": "GZ3125",
+        "ID": "GZ3125"
+      },
+      {
+        "NAME": "GZ3126",
+        "ID": "GZ3126"
+      },
+      {
+        "NAME": "GZ3127",
+        "ID": "GZ3127"
+      },
+      {
+        "NAME": "GZ3128",
+        "ID": "GZ3128"
+      },
+      {
+        "NAME": "GZ3129",
+        "ID": "GZ3129"
+      },
+      {
+        "NAME": "GZ3130",
+        "ID": "GZ3130"
+      },
+      {
+        "NAME": "GZ3131",
+        "ID": "GZ3131"
+      },
+      {
+        "NAME": "GZ3132",
+        "ID": "GZ3132"
+      },
+      {
+        "NAME": "GZ3133",
+        "ID": "GZ3133"
+      },
+      {
+        "NAME": "GZ3134",
+        "ID": "GZ3134"
+      },
+      {
+        "NAME": "GZ3135",
+        "ID": "GZ3135"
+      },
+      {
+        "NAME": "GZ3136",
+        "ID": "GZ3136"
+      },
+      {
+        "NAME": "GZ3137",
+        "ID": "GZ3137"
+      },
+      {
+        "NAME": "GZ3138",
+        "ID": "GZ3138"
+      },
+      {
+        "NAME": "GZ3139",
+        "ID": "GZ3139"
+      },
+      {
+        "NAME": "GZ3140",
+        "ID": "GZ3140"
+      },
+      {
+        "NAME": "HC001",
+        "ID": "HC001"
+      },
+      {
+        "NAME": "HC002",
+        "ID": "HC002"
+      },
+      {
+        "NAME": "HC003",
+        "ID": "HC003"
+      },
+      {
+        "NAME": "HC004",
+        "ID": "HC004"
+      },
+      {
+        "NAME": "HC005",
+        "ID": "HC005"
+      },
+      {
+        "NAME": "HC006",
+        "ID": "HC006"
+      },
+      {
+        "NAME": "HC007",
+        "ID": "HC007"
+      },
+      {
+        "NAME": "HC008",
+        "ID": "HC008"
+      },
+      {
+        "NAME": "HC009",
+        "ID": "HC009"
+      },
+      {
+        "NAME": "HC010",
+        "ID": "HC010"
+      },
+      {
+        "NAME": "HC011",
+        "ID": "HC011"
+      },
+      {
+        "NAME": "HC012",
+        "ID": "HC012"
+      },
+      {
+        "NAME": "HC013",
+        "ID": "HC013"
+      },
+      {
+        "NAME": "HC014",
+        "ID": "HC014"
+      },
+      {
+        "NAME": "HC015",
+        "ID": "HC015"
+      },
+      {
+        "NAME": "HC016",
+        "ID": "HC016"
+      },
+      {
+        "NAME": "HC017",
+        "ID": "HC017"
+      },
+      {
+        "NAME": "HC018",
+        "ID": "HC018"
+      },
+      {
+        "NAME": "HC019",
+        "ID": "HC019"
+      },
+      {
+        "NAME": "HC020",
+        "ID": "HC020"
+      },
+      {
+        "NAME": "HC021",
+        "ID": "HC021"
+      },
+      {
+        "NAME": "HC022",
+        "ID": "HC022"
+      },
+      {
+        "NAME": "HC023",
+        "ID": "HC023"
+      },
+      {
+        "NAME": "HC024",
+        "ID": "HC024"
+      },
+      {
+        "NAME": "HC025",
+        "ID": "HC025"
+      },
+      {
+        "NAME": "HC026",
+        "ID": "HC026"
+      },
+      {
+        "NAME": "HC027",
+        "ID": "HC027"
+      },
+      {
+        "NAME": "HC028",
+        "ID": "HC028"
+      },
+      {
+        "NAME": "HC029",
+        "ID": "HC029"
+      },
+      {
+        "NAME": "HC030",
+        "ID": "HC030"
+      },
+      {
+        "NAME": "HC031",
+        "ID": "HC031"
+      },
+      {
+        "NAME": "HC032",
+        "ID": "HC032"
+      },
+      {
+        "NAME": "HC033",
+        "ID": "HC033"
+      },
+      {
+        "NAME": "HC034",
+        "ID": "HC034"
+      },
+      {
+        "NAME": "HC035",
+        "ID": "HC035"
+      },
+      {
+        "NAME": "HC036",
+        "ID": "HC036"
+      },
+      {
+        "NAME": "HC037",
+        "ID": "HC037"
+      },
+      {
+        "NAME": "HC038",
+        "ID": "HC038"
+      },
+      {
+        "NAME": "HC039",
+        "ID": "HC039"
+      },
+      {
+        "NAME": "HC040",
+        "ID": "HC040"
+      },
+      {
+        "NAME": "HC041",
+        "ID": "HC041"
+      },
+      {
+        "NAME": "HC042",
+        "ID": "HC042"
+      },
+      {
+        "NAME": "HC043",
+        "ID": "HC043"
+      },
+      {
+        "NAME": "HC044",
+        "ID": "HC044"
+      },
+      {
+        "NAME": "HC045",
+        "ID": "HC045"
+      },
+      {
+        "NAME": "HC046",
+        "ID": "HC046"
+      },
+      {
+        "NAME": "HC047",
+        "ID": "HC047"
+      },
+      {
+        "NAME": "HC048",
+        "ID": "HC048"
+      },
+      {
+        "NAME": "HC049",
+        "ID": "HC049"
+      },
+      {
+        "NAME": "HC050",
+        "ID": "HC050"
+      },
+      {
+        "NAME": "HC051",
+        "ID": "HC051"
+      },
+      {
+        "NAME": "HC052",
+        "ID": "HC052"
+      },
+      {
+        "NAME": "HC053",
+        "ID": "HC053"
+      },
+      {
+        "NAME": "HC054",
+        "ID": "HC054"
+      },
+      {
+        "NAME": "HC055",
+        "ID": "HC055"
+      },
+      {
+        "NAME": "HC056",
+        "ID": "HC056"
+      },
+      {
+        "NAME": "HC057",
+        "ID": "HC057"
+      },
+      {
+        "NAME": "HC058",
+        "ID": "HC058"
+      },
+      {
+        "NAME": "HC059",
+        "ID": "HC059"
+      },
+      {
+        "NAME": "HC060",
+        "ID": "HC060"
+      },
+      {
+        "NAME": "HC061",
+        "ID": "HC061"
+      },
+      {
+        "NAME": "HC062",
+        "ID": "HC062"
+      },
+      {
+        "NAME": "HC063",
+        "ID": "HC063"
+      },
+      {
+        "NAME": "HC064",
+        "ID": "HC064"
+      },
+      {
+        "NAME": "HC065",
+        "ID": "HC065"
+      },
+      {
+        "NAME": "HC066",
+        "ID": "HC066"
+      },
+      {
+        "NAME": "HC067",
+        "ID": "HC067"
+      },
+      {
+        "NAME": "HC068",
+        "ID": "HC068"
+      },
+      {
+        "NAME": "HC068-1",
+        "ID": "HC068-1"
+      },
+      {
+        "NAME": "HC069",
+        "ID": "HC069"
+      },
+      {
+        "NAME": "HC070",
+        "ID": "HC070"
+      },
+      {
+        "NAME": "HC071",
+        "ID": "HC071"
+      },
+      {
+        "NAME": "HC072",
+        "ID": "HC072"
+      },
+      {
+        "NAME": "HC073",
+        "ID": "HC073"
+      },
+      {
+        "NAME": "HC074",
+        "ID": "HC074"
+      },
+      {
+        "NAME": "HC075",
+        "ID": "HC075"
+      },
+      {
+        "NAME": "HC076",
+        "ID": "HC076"
+      },
+      {
+        "NAME": "HC077",
+        "ID": "HC077"
+      },
+      {
+        "NAME": "HC078",
+        "ID": "HC078"
+      },
+      {
+        "NAME": "HC079",
+        "ID": "HC079"
+      },
+      {
+        "NAME": "HC080",
+        "ID": "HC080"
+      },
+      {
+        "NAME": "HC081",
+        "ID": "HC081"
+      },
+      {
+        "NAME": "HC082",
+        "ID": "HC082"
+      },
+      {
+        "NAME": "HC083",
+        "ID": "HC083"
+      },
+      {
+        "NAME": "HC084",
+        "ID": "HC084"
+      },
+      {
+        "NAME": "HC085",
+        "ID": "HC085"
+      },
+      {
+        "NAME": "HC086",
+        "ID": "HC086"
+      },
+      {
+        "NAME": "HC087",
+        "ID": "HC087"
+      },
+      {
+        "NAME": "HC088",
+        "ID": "HC088"
+      },
+      {
+        "NAME": "HC089",
+        "ID": "HC089"
+      },
+      {
+        "NAME": "HC090",
+        "ID": "HC090"
+      },
+      {
+        "NAME": "HC091",
+        "ID": "HC091"
+      },
+      {
+        "NAME": "HC092",
+        "ID": "HC092"
+      },
+      {
+        "NAME": "JZ001",
+        "ID": "JZ001"
+      },
+      {
+        "NAME": "JZ002",
+        "ID": "JZ002"
+      },
+      {
+        "NAME": "JZ003",
+        "ID": "JZ003"
+      },
+      {
+        "NAME": "JZ004",
+        "ID": "JZ004"
+      },
+      {
+        "NAME": "JZ005",
+        "ID": "JZ005"
+      },
+      {
+        "NAME": "JZ006",
+        "ID": "JZ006"
+      },
+      {
+        "NAME": "JZ007",
+        "ID": "JZ007"
+      },
+      {
+        "NAME": "JZ008",
+        "ID": "JZ008"
+      },
+      {
+        "NAME": "JZ009",
+        "ID": "JZ009"
+      },
+      {
+        "NAME": "JZ010",
+        "ID": "JZ010"
+      },
+      {
+        "NAME": "JZ011",
+        "ID": "JZ011"
+      },
+      {
+        "NAME": "JZ012",
+        "ID": "JZ012"
+      },
+      {
+        "NAME": "JZ013",
+        "ID": "JZ013"
+      },
+      {
+        "NAME": "JZ014",
+        "ID": "JZ014"
+      },
+      {
+        "NAME": "JZ015",
+        "ID": "JZ015"
+      },
+      {
+        "NAME": "JZ016",
+        "ID": "JZ016"
+      },
+      {
+        "NAME": "JZ017",
+        "ID": "JZ017"
+      },
+      {
+        "NAME": "JZ018",
+        "ID": "JZ018"
+      },
+      {
+        "NAME": "JZ019",
+        "ID": "JZ019"
+      },
+      {
+        "NAME": "JZ020",
+        "ID": "JZ020"
+      },
+      {
+        "NAME": "JZ021",
+        "ID": "JZ021"
+      },
+      {
+        "NAME": "JZ022",
+        "ID": "JZ022"
+      },
+      {
+        "NAME": "JZ023",
+        "ID": "JZ023"
+      },
+      {
+        "NAME": "JZ024",
+        "ID": "JZ024"
+      },
+      {
+        "NAME": "JZ025",
+        "ID": "JZ025"
+      },
+      {
+        "NAME": "JZ026",
+        "ID": "JZ026"
+      },
+      {
+        "NAME": "JZ027",
+        "ID": "JZ027"
+      },
+      {
+        "NAME": "JZ028",
+        "ID": "JZ028"
+      },
+      {
+        "NAME": "JZ029",
+        "ID": "JZ029"
+      },
+      {
+        "NAME": "JZ030",
+        "ID": "JZ030"
+      },
+      {
+        "NAME": "JZ031",
+        "ID": "JZ031"
+      },
+      {
+        "NAME": "JZ032",
+        "ID": "JZ032"
+      },
+      {
+        "NAME": "JZ033",
+        "ID": "JZ033"
+      },
+      {
+        "NAME": "JZ034",
+        "ID": "JZ034"
+      },
+      {
+        "NAME": "JZ035",
+        "ID": "JZ035"
+      },
+      {
+        "NAME": "JZ036",
+        "ID": "JZ036"
+      },
+      {
+        "NAME": "JZ037",
+        "ID": "JZ037"
+      },
+      {
+        "NAME": "JZ038",
+        "ID": "JZ038"
+      },
+      {
+        "NAME": "JZ039",
+        "ID": "JZ039"
+      },
+      {
+        "NAME": "JZ040",
+        "ID": "JZ040"
+      },
+      {
+        "NAME": "JZ041",
+        "ID": "JZ041"
+      },
+      {
+        "NAME": "JZ042",
+        "ID": "JZ042"
+      },
+      {
+        "NAME": "JZ043",
+        "ID": "JZ043"
+      },
+      {
+        "NAME": "JZ044",
+        "ID": "JZ044"
+      },
+      {
+        "NAME": "JZ045",
+        "ID": "JZ045"
+      },
+      {
+        "NAME": "JZ046",
+        "ID": "JZ046"
+      },
+      {
+        "NAME": "JZ047",
+        "ID": "JZ047"
+      },
+      {
+        "NAME": "JZ048",
+        "ID": "JZ048"
+      },
+      {
+        "NAME": "JZ049",
+        "ID": "JZ049"
+      },
+      {
+        "NAME": "JZ050",
+        "ID": "JZ050"
+      },
+      {
+        "NAME": "JZ051",
+        "ID": "JZ051"
+      },
+      {
+        "NAME": "JZ052",
+        "ID": "JZ052"
+      },
+      {
+        "NAME": "JZ053",
+        "ID": "JZ053"
+      },
+      {
+        "NAME": "JZ054",
+        "ID": "JZ054"
+      },
+      {
+        "NAME": "JZ055",
+        "ID": "JZ055"
+      },
+      {
+        "NAME": "JZ056",
+        "ID": "JZ056"
+      },
+      {
+        "NAME": "JZ057",
+        "ID": "JZ057"
+      },
+      {
+        "NAME": "JZ058",
+        "ID": "JZ058"
+      },
+      {
+        "NAME": "JZ059",
+        "ID": "JZ059"
+      },
+      {
+        "NAME": "JZ060",
+        "ID": "JZ060"
+      },
+      {
+        "NAME": "JZ061",
+        "ID": "JZ061"
+      },
+      {
+        "NAME": "JZ062",
+        "ID": "JZ062"
+      },
+      {
+        "NAME": "JZ063",
+        "ID": "JZ063"
+      },
+      {
+        "NAME": "JZ064",
+        "ID": "JZ064"
+      },
+      {
+        "NAME": "JZ065",
+        "ID": "JZ065"
+      },
+      {
+        "NAME": "JZ066",
+        "ID": "JZ066"
+      },
+      {
+        "NAME": "JZ067",
+        "ID": "JZ067"
+      },
+      {
+        "NAME": "JZ068",
+        "ID": "JZ068"
+      },
+      {
+        "NAME": "JZ069",
+        "ID": "JZ069"
+      },
+      {
+        "NAME": "JZ070",
+        "ID": "JZ070"
+      },
+      {
+        "NAME": "JZ071",
+        "ID": "JZ071"
+      },
+      {
+        "NAME": "JZ072",
+        "ID": "JZ072"
+      },
+      {
+        "NAME": "JZ073",
+        "ID": "JZ073"
+      },
+      {
+        "NAME": "JZ074",
+        "ID": "JZ074"
+      },
+      {
+        "NAME": "JZ075",
+        "ID": "JZ075"
+      },
+      {
+        "NAME": "JZ076",
+        "ID": "JZ076"
+      },
+      {
+        "NAME": "JZ077",
+        "ID": "JZ077"
+      },
+      {
+        "NAME": "JZ078",
+        "ID": "JZ078"
+      },
+      {
+        "NAME": "JZ079",
+        "ID": "JZ079"
+      },
+      {
+        "NAME": "JZ080",
+        "ID": "JZ080"
+      },
+      {
+        "NAME": "JZ081",
+        "ID": "JZ081"
+      },
+      {
+        "NAME": "JZ082",
+        "ID": "JZ082"
+      },
+      {
+        "NAME": "JZ083",
+        "ID": "JZ083"
+      },
+      {
+        "NAME": "JZ084",
+        "ID": "JZ084"
+      },
+      {
+        "NAME": "JZ085",
+        "ID": "JZ085"
+      },
+      {
+        "NAME": "JZ086",
+        "ID": "JZ086"
+      },
+      {
+        "NAME": "JZ087",
+        "ID": "JZ087"
+      },
+      {
+        "NAME": "JZ088",
+        "ID": "JZ088"
+      },
+      {
+        "NAME": "JZ089",
+        "ID": "JZ089"
+      },
+      {
+        "NAME": "JZ090",
+        "ID": "JZ090"
+      },
+      {
+        "NAME": "JZ091",
+        "ID": "JZ091"
+      },
+      {
+        "NAME": "JZ092",
+        "ID": "JZ092"
+      },
+      {
+        "NAME": "JZ093",
+        "ID": "JZ093"
+      },
+      {
+        "NAME": "JZ094",
+        "ID": "JZ094"
+      },
+      {
+        "NAME": "JZ095",
+        "ID": "JZ095"
+      },
+      {
+        "NAME": "JZ096",
+        "ID": "JZ096"
+      },
+      {
+        "NAME": "JZ097",
+        "ID": "JZ097"
+      },
+      {
+        "NAME": "JZ098",
+        "ID": "JZ098"
+      },
+      {
+        "NAME": "JZ099",
+        "ID": "JZ099"
+      },
+      {
+        "NAME": "JZ100",
+        "ID": "JZ100"
+      },
+      {
+        "NAME": "JZ101",
+        "ID": "JZ101"
+      },
+      {
+        "NAME": "JZ102",
+        "ID": "JZ102"
+      },
+      {
+        "NAME": "JZ103",
+        "ID": "JZ103"
+      },
+      {
+        "NAME": "JZ104",
+        "ID": "JZ104"
+      },
+      {
+        "NAME": "JZ105",
+        "ID": "JZ105"
+      },
+      {
+        "NAME": "LBQ1001",
+        "ID": "LBQ1001"
+      },
+      {
+        "NAME": "LBQ1002",
+        "ID": "LBQ1002"
+      },
+      {
+        "NAME": "LBQ1003",
+        "ID": "LBQ1003"
+      },
+      {
+        "NAME": "LBQ1004",
+        "ID": "LBQ1004"
+      },
+      {
+        "NAME": "LBQ1005",
+        "ID": "LBQ1005"
+      },
+      {
+        "NAME": "LBQ1006",
+        "ID": "LBQ1006"
+      },
+      {
+        "NAME": "LBQ1007",
+        "ID": "LBQ1007"
+      },
+      {
+        "NAME": "LBQ1008",
+        "ID": "LBQ1008"
+      },
+      {
+        "NAME": "LBQ1009",
+        "ID": "LBQ1009"
+      },
+      {
+        "NAME": "LBQ1010",
+        "ID": "LBQ1010"
+      },
+      {
+        "NAME": "LBQ1011",
+        "ID": "LBQ1011"
+      },
+      {
+        "NAME": "LBQ1012",
+        "ID": "LBQ1012"
+      },
+      {
+        "NAME": "LBQ1012-1",
+        "ID": "LBQ1012-1"
+      },
+      {
+        "NAME": "LBQ1013",
+        "ID": "LBQ1013"
+      },
+      {
+        "NAME": "LBQ1014",
+        "ID": "LBQ1014"
+      },
+      {
+        "NAME": "LBQ1015",
+        "ID": "LBQ1015"
+      },
+      {
+        "NAME": "LBQ1016",
+        "ID": "LBQ1016"
+      },
+      {
+        "NAME": "LBQ1017",
+        "ID": "LBQ1017"
+      },
+      {
+        "NAME": "LBQ1018",
+        "ID": "LBQ1018"
+      },
+      {
+        "NAME": "LBQ1019",
+        "ID": "LBQ1019"
+      },
+      {
+        "NAME": "LBQ1020",
+        "ID": "LBQ1020"
+      },
+      {
+        "NAME": "LBQ1021",
+        "ID": "LBQ1021"
+      },
+      {
+        "NAME": "LBQ1022",
+        "ID": "LBQ1022"
+      },
+      {
+        "NAME": "LBQ1022-1",
+        "ID": "LBQ1022-1"
+      },
+      {
+        "NAME": "LBQ1023",
+        "ID": "LBQ1023"
+      },
+      {
+        "NAME": "LBQ1024",
+        "ID": "LBQ1024"
+      },
+      {
+        "NAME": "LBQ1025",
+        "ID": "LBQ1025"
+      },
+      {
+        "NAME": "LBQ1026",
+        "ID": "LBQ1026"
+      },
+      {
+        "NAME": "LBQ1027",
+        "ID": "LBQ1027"
+      },
+      {
+        "NAME": "LBQ1028",
+        "ID": "LBQ1028"
+      },
+      {
+        "NAME": "LBQ1029",
+        "ID": "LBQ1029"
+      },
+      {
+        "NAME": "LBQ1030",
+        "ID": "LBQ1030"
+      },
+      {
+        "NAME": "LBQ1031",
+        "ID": "LBQ1031"
+      },
+      {
+        "NAME": "LBQ1032",
+        "ID": "LBQ1032"
+      },
+      {
+        "NAME": "LBQ1033",
+        "ID": "LBQ1033"
+      },
+      {
+        "NAME": "LBQ1034",
+        "ID": "LBQ1034"
+      },
+      {
+        "NAME": "LBQ1035",
+        "ID": "LBQ1035"
+      },
+      {
+        "NAME": "LBQ1036",
+        "ID": "LBQ1036"
+      },
+      {
+        "NAME": "LBQ1037",
+        "ID": "LBQ1037"
+      },
+      {
+        "NAME": "LBQ1038",
+        "ID": "LBQ1038"
+      },
+      {
+        "NAME": "LBQ1039",
+        "ID": "LBQ1039"
+      },
+      {
+        "NAME": "LBQ1040",
+        "ID": "LBQ1040"
+      },
+      {
+        "NAME": "LBQ1041",
+        "ID": "LBQ1041"
+      },
+      {
+        "NAME": "LBQ1042",
+        "ID": "LBQ1042"
+      },
+      {
+        "NAME": "LBQ1043",
+        "ID": "LBQ1043"
+      },
+      {
+        "NAME": "LBQ1044",
+        "ID": "LBQ1044"
+      },
+      {
+        "NAME": "LBQ1045",
+        "ID": "LBQ1045"
+      },
+      {
+        "NAME": "LBQ1046",
+        "ID": "LBQ1046"
+      },
+      {
+        "NAME": "LBQ1047",
+        "ID": "LBQ1047"
+      },
+      {
+        "NAME": "LBQ1048",
+        "ID": "LBQ1048"
+      },
+      {
+        "NAME": "LBQ1049",
+        "ID": "LBQ1049"
+      },
+      {
+        "NAME": "LBQ1050",
+        "ID": "LBQ1050"
+      },
+      {
+        "NAME": "LBQ1051",
+        "ID": "LBQ1051"
+      },
+      {
+        "NAME": "LBQ1052",
+        "ID": "LBQ1052"
+      },
+      {
+        "NAME": "LBQ1053",
+        "ID": "LBQ1053"
+      },
+      {
+        "NAME": "LBQ1054",
+        "ID": "LBQ1054"
+      },
+      {
+        "NAME": "LBQ1055",
+        "ID": "LBQ1055"
+      },
+      {
+        "NAME": "LBQ1056",
+        "ID": "LBQ1056"
+      },
+      {
+        "NAME": "LBQ1057",
+        "ID": "LBQ1057"
+      },
+      {
+        "NAME": "LBQ1058",
+        "ID": "LBQ1058"
+      },
+      {
+        "NAME": "LBQ1059",
+        "ID": "LBQ1059"
+      },
+      {
+        "NAME": "LBQ1060",
+        "ID": "LBQ1060"
+      },
+      {
+        "NAME": "LY001",
+        "ID": "LY001"
+      },
+      {
+        "NAME": "LY002",
+        "ID": "LY002"
+      },
+      {
+        "NAME": "LY003",
+        "ID": "LY003"
+      },
+      {
+        "NAME": "LY004",
+        "ID": "LY004"
+      },
+      {
+        "NAME": "LY005",
+        "ID": "LY005"
+      },
+      {
+        "NAME": "LY006",
+        "ID": "LY006"
+      },
+      {
+        "NAME": "LY007",
+        "ID": "LY007"
+      },
+      {
+        "NAME": "LY008",
+        "ID": "LY008"
+      },
+      {
+        "NAME": "LY009",
+        "ID": "LY009"
+      },
+      {
+        "NAME": "LY010",
+        "ID": "LY010"
+      },
+      {
+        "NAME": "LY011",
+        "ID": "LY011"
+      },
+      {
+        "NAME": "LY012",
+        "ID": "LY012"
+      },
+      {
+        "NAME": "LY013",
+        "ID": "LY013"
+      },
+      {
+        "NAME": "LY014",
+        "ID": "LY014"
+      },
+      {
+        "NAME": "LY015",
+        "ID": "LY015"
+      },
+      {
+        "NAME": "LY016",
+        "ID": "LY016"
+      },
+      {
+        "NAME": "LY017",
+        "ID": "LY017"
+      },
+      {
+        "NAME": "LY018",
+        "ID": "LY018"
+      },
+      {
+        "NAME": "LY019",
+        "ID": "LY019"
+      },
+      {
+        "NAME": "LY020",
+        "ID": "LY020"
+      },
+      {
+        "NAME": "LY021",
+        "ID": "LY021"
+      },
+      {
+        "NAME": "LY022",
+        "ID": "LY022"
+      },
+      {
+        "NAME": "LY023",
+        "ID": "LY023"
+      },
+      {
+        "NAME": "LY024",
+        "ID": "LY024"
+      },
+      {
+        "NAME": "LY025",
+        "ID": "LY025"
+      },
+      {
+        "NAME": "LY026",
+        "ID": "LY026"
+      },
+      {
+        "NAME": "LY027",
+        "ID": "LY027"
+      },
+      {
+        "NAME": "LY028",
+        "ID": "LY028"
+      },
+      {
+        "NAME": "LY029",
+        "ID": "LY029"
+      },
+      {
+        "NAME": "LY030",
+        "ID": "LY030"
+      },
+      {
+        "NAME": "LY031",
+        "ID": "LY031"
+      },
+      {
+        "NAME": "LY032",
+        "ID": "LY032"
+      },
+      {
+        "NAME": "LY033",
+        "ID": "LY033"
+      },
+      {
+        "NAME": "LY034",
+        "ID": "LY034"
+      },
+      {
+        "NAME": "LY035",
+        "ID": "LY035"
+      },
+      {
+        "NAME": "LY036",
+        "ID": "LY036"
+      },
+      {
+        "NAME": "LY037",
+        "ID": "LY037"
+      },
+      {
+        "NAME": "LY038",
+        "ID": "LY038"
+      },
+      {
+        "NAME": "LY039",
+        "ID": "LY039"
+      },
+      {
+        "NAME": "LY040",
+        "ID": "LY040"
+      },
+      {
+        "NAME": "LY041",
+        "ID": "LY041"
+      },
+      {
+        "NAME": "LY042",
+        "ID": "LY042"
+      },
+      {
+        "NAME": "LY043",
+        "ID": "LY043"
+      },
+      {
+        "NAME": "LY044",
+        "ID": "LY044"
+      },
+      {
+        "NAME": "LY045",
+        "ID": "LY045"
+      },
+      {
+        "NAME": "LY046",
+        "ID": "LY046"
+      },
+      {
+        "NAME": "LY047",
+        "ID": "LY047"
+      },
+      {
+        "NAME": "LY048",
+        "ID": "LY048"
+      },
+      {
+        "NAME": "LY049",
+        "ID": "LY049"
+      },
+      {
+        "NAME": "LY050",
+        "ID": "LY050"
+      },
+      {
+        "NAME": "LY051",
+        "ID": "LY051"
+      },
+      {
+        "NAME": "LY052",
+        "ID": "LY052"
+      },
+      {
+        "NAME": "LY053",
+        "ID": "LY053"
+      },
+      {
+        "NAME": "LY054",
+        "ID": "LY054"
+      },
+      {
+        "NAME": "LY055",
+        "ID": "LY055"
+      },
+      {
+        "NAME": "LY056",
+        "ID": "LY056"
+      },
+      {
+        "NAME": "LY057",
+        "ID": "LY057"
+      },
+      {
+        "NAME": "LY058",
+        "ID": "LY058"
+      },
+      {
+        "NAME": "LY059",
+        "ID": "LY059"
+      },
+      {
+        "NAME": "LY060",
+        "ID": "LY060"
+      },
+      {
+        "NAME": "LY061",
+        "ID": "LY061"
+      },
+      {
+        "NAME": "LY062",
+        "ID": "LY062"
+      },
+      {
+        "NAME": "LY063",
+        "ID": "LY063"
+      },
+      {
+        "NAME": "LY064",
+        "ID": "LY064"
+      },
+      {
+        "NAME": "LY065",
+        "ID": "LY065"
+      },
+      {
+        "NAME": "LY066",
+        "ID": "LY066"
+      },
+      {
+        "NAME": "LY067",
+        "ID": "LY067"
+      },
+      {
+        "NAME": "LY068",
+        "ID": "LY068"
+      },
+      {
+        "NAME": "LY069",
+        "ID": "LY069"
+      },
+      {
+        "NAME": "LY070",
+        "ID": "LY070"
+      },
+      {
+        "NAME": "LY071",
+        "ID": "LY071"
+      },
+      {
+        "NAME": "LY072",
+        "ID": "LY072"
+      },
+      {
+        "NAME": "LY073",
+        "ID": "LY073"
+      },
+      {
+        "NAME": "LY074",
+        "ID": "LY074"
+      },
+      {
+        "NAME": "LY075",
+        "ID": "LY075"
+      },
+      {
+        "NAME": "LY076",
+        "ID": "LY076"
+      },
+      {
+        "NAME": "LY077",
+        "ID": "LY077"
+      },
+      {
+        "NAME": "LY078",
+        "ID": "LY078"
+      }
+    ]
+  },
+  "SERV_RELATE_IDS": "",
+  "QUERIES": {},
+  "BTNS": {
+    "byid": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ACT_WS_RESULT": "",
+      "S_FLAG": "1",
+      "ACT_LOG_FLAG": "2",
+      "ACT_ID": "39etGSLClb1XdPKxCwAYWyx",
+      "ACT_HOT_KEY": "",
+      "S_MTIME": "2014-08-05 16:28:36:965",
+      "_ROWNUM_": "0",
+      "ACT_TYPE": "3",
+      "ACT_TIP": "",
+      "_PK_": "39etGSLClb1XdPKxCwAYWyx",
+      "ACT_GROUP": "2",
+      "ACT_WS_FLAG": "2",
+      "ACT_CSS": "byid",
+      "ACT_NAME": " 查 看 ",
+      "ACT_EXPRESSION": "",
+      "ACT_MEMO": "",
+      "SY_SERV_ACT_PARAM": [],
+      "ACT_ORDER": "10",
+      "ACT_MOBILE_FLAG": "1",
+      "ACT_CODE": "byid",
+      "ACT_EXPRESSION_FLAG": ""
+    },
+    "modify": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ACT_WS_RESULT": "",
+      "S_FLAG": "1",
+      "ACT_LOG_FLAG": "2",
+      "ACT_ID": "0Ko4Zlxcd1j8KvELj7SNr3",
+      "ACT_HOT_KEY": "",
+      "S_MTIME": "2014-08-05 16:28:37:379",
+      "_ROWNUM_": "1",
+      "ACT_TYPE": "3",
+      "ACT_TIP": "确保列表无编辑组按钮卡片也可以保存",
+      "_PK_": "0Ko4Zlxcd1j8KvELj7SNr3",
+      "ACT_GROUP": "1",
+      "ACT_WS_FLAG": "2",
+      "ACT_CSS": "exp",
+      "ACT_NAME": "修改",
+      "ACT_EXPRESSION": "",
+      "ACT_MEMO": "",
+      "SY_SERV_ACT_PARAM": [],
+      "ACT_ORDER": "15",
+      "ACT_MOBILE_FLAG": "1",
+      "ACT_CODE": "modify",
+      "ACT_EXPRESSION_FLAG": ""
+    },
+    "add": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ACT_WS_RESULT": "",
+      "S_FLAG": "1",
+      "ACT_LOG_FLAG": "2",
+      "ACT_ID": "1EZuZQiRJfSWMy36OC3Snj",
+      "ACT_HOT_KEY": "",
+      "S_MTIME": "2014-08-05 16:28:36:931",
+      "_ROWNUM_": "2",
+      "ACT_TYPE": "1",
+      "ACT_TIP": "",
+      "_PK_": "1EZuZQiRJfSWMy36OC3Snj",
+      "ACT_GROUP": "1",
+      "ACT_WS_FLAG": "2",
+      "ACT_CSS": "add",
+      "ACT_NAME": " 添 加 ",
+      "ACT_EXPRESSION": "",
+      "ACT_MEMO": "",
+      "SY_SERV_ACT_PARAM": [],
+      "ACT_ORDER": "20",
+      "ACT_MOBILE_FLAG": "1",
+      "ACT_CODE": "add",
+      "ACT_EXPRESSION_FLAG": ""
+    },
+    "save": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ACT_WS_RESULT": "",
+      "S_FLAG": "1",
+      "ACT_LOG_FLAG": "2",
+      "ACT_ID": "3cqGMZ8yJ6CFgvt6pcuoax",
+      "ACT_HOT_KEY": "",
+      "S_MTIME": "2014-08-05 16:28:37:152",
+      "_ROWNUM_": "4",
+      "ACT_TYPE": "2",
+      "ACT_TIP": "",
+      "_PK_": "3cqGMZ8yJ6CFgvt6pcuoax",
+      "ACT_GROUP": "1",
+      "ACT_WS_FLAG": "2",
+      "ACT_CSS": "save",
+      "ACT_NAME": " 保 存 ",
+      "ACT_EXPRESSION": "",
+      "ACT_MEMO": "",
+      "SY_SERV_ACT_PARAM": [],
+      "ACT_ORDER": "50",
+      "ACT_MOBILE_FLAG": "1",
+      "ACT_CODE": "save",
+      "ACT_EXPRESSION_FLAG": ""
+    },
+    "delete": {
+      "SERV_ID": "CPDCP_PREHEAT_WELD_GROUP",
+      "ACT_WS_RESULT": "",
+      "S_FLAG": "1",
+      "ACT_LOG_FLAG": "1",
+      "ACT_ID": "2qK7v35jF3M95nhif0wZKFF",
+      "ACT_HOT_KEY": "",
+      "S_MTIME": "2014-08-05 16:28:37:034",
+      "_ROWNUM_": "7",
+      "ACT_TYPE": "1",
+      "ACT_TIP": "",
+      "_PK_": "2qK7v35jF3M95nhif0wZKFF",
+      "ACT_GROUP": "1",
+      "ACT_WS_FLAG": "2",
+      "ACT_CSS": "delete",
+      "ACT_NAME": " 删 除 ",
+      "ACT_EXPRESSION": "",
+      "ACT_MEMO": "",
+      "SY_SERV_ACT_PARAM": [],
+      "ACT_ORDER": "100",
+      "ACT_MOBILE_FLAG": "1",
+      "ACT_CODE": "delete",
+      "ACT_EXPRESSION_FLAG": ""
+    }
+  },
+  "SERV_CARD_LOAD_NAMES": "",
+  "SERV_CARD_JSP": "",
+  "SERV_NAV_ITEMS": "",
+  "SERV_LIST_LOAD": "",
+  "SERV_CARD_STYLE": "1",
+  "SERV_CARD_TMPL": ""
+}

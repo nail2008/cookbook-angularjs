@@ -1,0 +1,272 @@
+<div ui-content-for="title">
+    <span>组对焊接记录</span>
+</div>
+
+<div class="scrollable">
+    <div class="scrollable-content section">
+
+        <form name="form" role="form" novalidate ng-submit='commit()'>
+            <fieldset>
+                <input class="form-control" type="hidden" name="ID" ng-model="data.ID"/>
+                <input class="form-control" type="hidden" name="RECORD_TIME" ng-model="data.RECORD_TIME"/>
+                <input class="form-control" type="hidden" name="UPLOAD_FLAG" ng-model="data.UPLOAD_FLAG"/>
+                <input class="form-control" type="hidden" name="S_PUBLIC" ng-model="data.S_PUBLIC"/>
+                <input class="form-control" type="hidden" name="S_FLAG" ng-model="data.S_FLAG"/>
+                <input class="form-control" type="hidden" name="S_CMPY" ng-model="data.S_CMPY"/>
+                <input class="form-control" type="hidden" name="S_DEPT" ng-model="data.S_DEPT"/>
+                <input class="form-control" type="hidden" name="STORAGE_TIME" ng-model="data.STORAGE_TIME"/>
+                <input class="form-control" type="hidden" name="S_USER" ng-model="data.S_USER"/>
+                <input class="form-control" type="hidden" name="S_MTIME" ng-model="data.S_MTIME"/>
+
+                <legend>焊口</legend>
+                <div class="form-group has-success has-feedback">
+                    <label>焊口编号</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.WELD_ID"
+                           name="WELD_ID"
+                           required/>
+                    <div class="error" ng-messages="form.WELD_ID.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>间隙(mm)</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.WELD_GAP"
+                           name="WELD_GAP"/>
+                    <div class="error" ng-messages="form.WELD_GAP.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>螺纹间距（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.THREAD_PITCH"
+                           name="THREAD_PITCH"/>
+                    <div class="error" ng-messages="form.THREAD_PITCH.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>错边量（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.WRONG_SIDE"
+                           name="WRONG_SIDE"/>
+                    <div class="error" ng-messages="form.WRONG_SIDE.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>相邻焊缝间距（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.WELD_PITCH"
+                           name="WELD_PITCH"/>
+                    <div class="error" ng-messages="form.WELD_PITCH.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>预热温度（℃）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.PREHEAT_TEMP"
+                           name="PREHEAT_TEMP"/>
+                    <div class="error" ng-messages="form.PREHEAT_TEMP.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>预热宽度（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.PREHEAT_WIDTH"
+                           name="PREHEAT_WIDTH"/>
+                    <div class="error" ng-messages="form.PREHEAT_WIDTH.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <legend>位置</legend>
+                <div class="form-group no-padding has-success">
+                    <label>起始桩号</label>
+                    <ui-select ng-model="data.STAKE_ID" name="STAKE_ID" theme="bootstrap"
+                               class="form-control" title="请选择">
+                        <ui-select-match placeholder="请输入查询条件并选择">
+                            {{$select.selected.NAME}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="item.ID as item in CPDCP_XL_PEG | filter: $select.search"
+                                           refresh="refreshPegSelect($select.search)"
+                                           refresh-delay="1000">
+                            <div ng-bind-html="item.NAME | highlight: $select.search"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <div class="error" ng-messages="form.STAKE_ID.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>相对起始桩里程（m）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.RELATIVE_POSITION"
+                           name="RELATIVE_POSITION"/>
+
+                    <div class="error" ng-messages="form.RELATIVE_POSITION.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <legend>前钢管</legend>
+                <div class="form-group no-padding has-success">
+                    <label>前管号</label>
+                    <ui-select ng-model="data.FRONT_EQUIPMENT_NO" name="FRONT_EQUIPMENT_NO" theme="bootstrap"
+                               class="form-control" title="请选择">
+                        <ui-select-match placeholder="请输入查询条件并选择">
+                            {{$select.selected.NAME}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="item.ID as item in CPDCP_PIPE | filter: $select.search"
+                                           refresh="refreshPipeSelect($select.search)"
+                                           refresh-delay="1000">
+                            <div ng-bind-html="item.NAME | highlight: $select.search"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <div class="error" ng-messages="form.FRONT_EQUIPMENT_NO.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>坡口角度（°）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.GROOVE_F"
+                           name="GROOVE_F"/>
+                    <div class="error" ng-messages="form.GROOVE_F.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>圆度（‰）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.ROUNDNESS_F"
+                           name="ROUNDNESS_F"/>
+                    <div class="error" ng-messages="form.ROUNDNESS_F.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>钝边（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.BLUNT_EDGE_F"
+                           name="BLUNT_EDGE_F"/>
+                    <div class="error" ng-messages="form.BLUNT_EDGE_F.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <legend>后钢管</legend>
+                <div class="form-group no-padding has-success">
+                    <label>后管号</label>
+                    <ui-select ng-model="data.BACK_EQUIPMENT_NO" name="BACK_EQUIPMENT_NO" theme="bootstrap"
+                               class="form-control" title="请选择">
+                        <ui-select-match placeholder="请输入查询条件并选择">
+                            {{$select.selected.NAME}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="item.ID as item in CPDCP_PIPE | filter: $select.search"
+                                           refresh="refreshPipeSelect($select.search)"
+                                           refresh-delay="1000">
+                            <div ng-bind-html="item.NAME | highlight: $select.search"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <div class="error" ng-messages="form.BACK_EQUIPMENT_NO.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>坡口角度（°）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.GROOVE2_B"
+                           name="GROOVE2_B"/>
+                    <div class="error" ng-messages="form.GROOVE2_B.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>圆度（‰）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.ROUNDNESS_B"
+                           name="ROUNDNESS_B"/>
+                    <div class="error" ng-messages="form.ROUNDNESS_B.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <div class="form-group has-success has-feedback">
+                    <label>钝边（mm）</label>
+                    <input type="text"
+                           class="form-control"
+                           ng-model="data.BLUNT_EDGE_B"
+                           name="BLUNT_EDGE_B"/>
+                    <div class="error" ng-messages="form.BLUNT_EDGE_B.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+
+                <legend>基础数据</legend>
+                <div class="form-group no-padding has-success">
+                    <label>工程名称</label>
+                    <input class="form-control" type="hidden" name="PROJECT" ng-model="data.PROJECT"/>
+                    <input type="text" class="form-control" name="PROJECT__NAME" ng-model="data.PROJECT__NAME" readonly/>
+                </div>
+                <div class="form-group no-padding has-success">
+                    <label>施工单位名称</label>
+                    <input class="form-control" type="hidden" name="CONTRACTOR" ng-model="data.CONTRACTOR"/>
+                    <input type="text" class="form-control" name="CONTRACTOR__NAME" ng-model="data.CONTRACTOR__NAME" readonly/>
+                </div>
+                <div class="form-group no-padding has-success">
+                    <label>施工机组名称</label>
+                    <input class="form-control" type="hidden" name="CONSTRUCTION_TEAM" ng-model="data.CONSTRUCTION_TEAM"/>
+                    <input type="text" class="form-control" name="CONSTRUCTION_TEAM__NAME" ng-model="data.CONSTRUCTION_TEAM__NAME" readonly/>
+                </div>
+                <div class="form-group no-padding has-success">
+                    <label>技术员/质量员</label>
+                    <input class="form-control" type="hidden" name="TECHQULI" ng-model="data.TECHQULI"/>
+                    <input type="text" class="form-control" name="TECHQULI__NAME" ng-model="data.TECHQULI__NAME" readonly/>
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label>日期</label>
+                    <input type="date"
+                           ng-model="data.WORK_DATE"
+                           name="WORK_DATE"
+                           class="form-control" required my-format-date/>
+                    <div class="error" ng-messages="form.WORK_DATE.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label>备注</label>
+                    <textarea class="form-control"
+                              ng-model="data.REMARK"
+                              name="REMARK"
+                              rows="3"
+                              ></textarea>
+                    <div class="error" ng-messages="form.REMARK.$error" ng-messages-include="views/formError.html">
+                    </div>
+                </div>
+            </fieldset>
+
+            <button class="btn btn-primary btn-block" ng-disabled="form.$invalid">
+                保存
+            </button>
+
+            <div ui-content-for="navbarAction">
+                <a class='btn' ng-click='commit("CPDCP_PREHEAT_WELD_GROUP")'>Commit</a>
+            </div>
+
+           <pre>{{data}}</pre>
+
+        </form>
+    </div>
+</div>

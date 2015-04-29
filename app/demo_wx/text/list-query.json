@@ -1,0 +1,51 @@
+//http://192.168.6.27:8080/sy/base/view/CPDCP_PREHEAT_WELD_GROUP.query.do
+//查询数据表单-旧微信
+{
+  "_OKCOUNT_": "0",
+  "_PAGE_": {
+    "ALLNUM": "0",
+    "SHOWNUM": "50",
+    "NOWPAGE": "1",
+    "PAGES": "1"
+  },
+  "_DATA_": [],
+  "_TIME_": "0.015",
+  "_MSG_": "",
+  "_COLS_": {
+    "ID": {
+      "ITEM_NAME": "主键",
+      "ITEM_CODE": "ID",
+      "ITEM_LIST_FLAG": "2"
+    },
+    "WELD_ID": {
+      "ITEM_NAME": "焊口编号",
+      "ITEM_CODE": "WELD_ID",
+      "ITEM_LIST_FLAG": "1"
+    },
+    "STAKE_ID__NAME": {
+      "ITEM_NAME": "起始桩号",
+      "ITEM_CODE": "STAKE_ID__NAME",
+      "ITEM_LIST_FLAG": "1"
+    },
+    "STAKE_ID": {
+      "ITEM_NAME": "起始桩号",
+      "ITEM_CODE": "STAKE_ID",
+      "ITEM_LIST_FLAG": "2"
+    },
+    "RELATIVE_POSITION": {
+      "ITEM_NAME": "相对起始桩里程（m）",
+      "ITEM_CODE": "RELATIVE_POSITION",
+      "ITEM_LIST_FLAG": "1"
+    },
+    "BACK_EQUIPMENT_NO__NAME": {
+      "ITEM_NAME": "后管号",
+      "ITEM_CODE": "BACK_EQUIPMENT_NO__NAME",
+      "ITEM_LIST_FLAG": "1"
+    },
+    "BACK_EQUIPMENT_NO": {
+      "ITEM_NAME": "后管号",
+      "ITEM_CODE": "BACK_EQUIPMENT_NO",
+      "ITEM_LIST_FLAG": "2"
+    }
+  }
+}

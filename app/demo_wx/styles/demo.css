@@ -162,3 +162,7 @@ input.scrollable-header {
 .scrollable {
   position: relative;
 }
+
+.error{
+  color:red;
+}
