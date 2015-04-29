@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo02" ng-init="someProperty='some data'">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P78 指令的定义中的scope参数</p>
+
+<div ng-init="siblingProperty='moredata'">
+    Inside Div Two:{{aThirdProperty}}
+    <div ng-init="aThirdProperty='data for 3rd property'" ng-controller="SomeController">
+        Inside Div Three:{{aThirdProperty}}
+        <div ng-init="aFourthProperty">
+            Inside Div Four:{{aThirdProperty}}
+        </div>
+    </div>
+</div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo02', []);
+    app.controller('SomeController', function ($scope) {
+
+    });
+
+</script>
+</body>
+</html>

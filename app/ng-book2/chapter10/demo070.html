@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo07" >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P81 绑定策略</p><!--TODO 没看懂例子，以后再说-->
+<p>上一节讲到使用指令的scope属性{}来隔离作用域，以便在组件的调用中不影响内外部变量的值。那问题来了，如果有一部分值希望继承，而有一部分值不希望继承呢？</p>
+<p>这就需要绑定策略，本地作用域@或@attr、双向绑定=或=attr、父级作用域定&或&attr</p>
+
+<input type="text" ng-model="to"/>
+<div scope-example ng-model="to" on-send="sendMail(mail)" from-name="ari@fullstack.io"></div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo07',[]);
+    app.directive('scopeExample', function () {
+        return {
+            restrict : 'A',
+            scope: {
+                ngModel: '=',
+                onSend: '&',
+                fromName: '@'
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

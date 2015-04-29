@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp11.demo01">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第11章 AngularJS模块加载</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P95 配置</p>
+
+<!--代码仅作语法示例，本页面不能正常运行-->
+<script>
+    //采用config()函数的语法糖
+    angular.module('ngb2.chp11.demo01', [])
+            .factory('myFactory', function () {
+                var service = {};
+                return service;
+            })
+            .directive('myDirective', function () {
+                return {
+                    template: '<button>Click me</button>'
+                }
+            });
+
+    //不采用config()函数的语法糖
+    angular.module('ngb2.chp11.demo01', [])
+            .config(function ($provide, $compileProvider) {
+                $provide.factory('myFactory', function () {
+                    var service = {};
+                    return service;
+                });
+                $compileProvider.directive('myDirective', function () {
+                    return {
+                        template: '<button>Click me</button>'
+                    }
+                });
+            });
+    //定义多个配置块
+    angular.module('ngb2.chp11.demo01', [])
+            .config(function ($routeProvider) {
+                $routeProvider.when('/', {
+                    templateUrl: 'views/welcome.html',
+                    controller: 'WelcomeController'
+                });
+            }).config(function (ConnectionProvider) {
+                ConnectionProvider.setApiKey('SOME_API_KEY');
+            });
+
+</script>
+
+<p>P96 运行块</p>
+<script !src="">
+    angular.module('ngb2.chp11.demo01', [])
+            .run(function ($rootScope, AuthService) {   //马上执行
+                $rootScope.$on('$routeChangeStart', function (evt, next, current) {
+                    //如果用户未登录
+                    if (!AuthService.userLoggedIn()) {
+                        if (next.templateUrl === "login.html") {
+                            //do nothing
+                        } else {
+                            $location.path('/login');
+                        }
+                    }
+                });
+            });
+</script>
+</body>
+</html>

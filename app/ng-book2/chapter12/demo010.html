@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp12.demo01">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第12章 多重视图和路由</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../../bower_components/angular-route/angular-route.js"></script>
+</head>
+<body>
+<header>
+    <h1>Header</h1>
+</header>
+<div class="content">
+    <!--采用ng-view来对应的视图内容占位-->
+    <!-- ng-view 是一个优先级为1000的终极指令-->
+    <div ng-view></div>
+</div>
+<footer>
+    <h5>Footer</h5>
+</footer>
+
+<script !src="">
+    var app = angular.module('ngb2.chp12.demo01', ['ngRoute']);
+    //这里使用了数组这种特殊的依赖注入语法，详见13章
+    app.config(['$routeProvider', function ($routeProvider) {
+        $routeProvider
+                .when('/', {
+                    templateUrl: 'view/home.html',
+                    controller: 'HomeController'
+                }).when('/login', {
+                    templateUrl: 'view/login.html',
+                    controller: 'LoginController',
+                    resolve: {
+                        'data': ['$http', function ($http) {
+                            return $http.get('/api').then(
+                                    function success(resp) {
+                                        return repsonse.data;
+                                    }, function error(reason) {
+                                        return false;
+                                    }
+                            );
+                        }]
+                    }
+                }).when('/dashboard', {
+                    templateUrl: 'view/dashboard.html',
+                    controller: 'DashboardController',
+                    resolve: {
+                        user: function (SessionService) {
+                            return SessionService.getCurrentUser();
+                        }
+                    }
+                }).otherwise({
+                   // redirectTo: '/'
+                    //route:从当前路径中提取出的路由参数
+                    //path:当前路径
+                    //search:当前url中的查询串
+                    redirectTo: function (route,path,search) {
+                        return '/';
+                    }
+                });
+    }]);
+</script>
+</body>
+</html>

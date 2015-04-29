@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo01">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P73 指令的定义的全部设置</p>
+
+<div my-directive></div>
+<script>
+    var app = angular.module('ngb2.chp10.demo01', []);
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'EACM',   //E表示elemnent，A表示attribute，C表示class，M表示comment
+            priority: 1000,     //数字越大优先级越高,但内置指令，尤其是ngRepeat的优先级总是最高的
+            terminal:false,     //为true时，优先级比它低的指令将不会执行，比如ngIf和ngView的这个属性就为true
+
+         //   template: '<a href="http://www.baidu.com">Click me to go to Baidu</a>',
+            //书里介绍的多行template就不要用了，请用templateUrl引用外部模板
+            template: function (tElemnet, tAttrs) {     //template属性不仅可以直接返回模板，也可以指定一个函数来处理返回
+                return '<a href="http://www.baidu.com">Click me to go to Baidu</a>';
+            },
+
+            templateUrl:'demo010_temp.html',     //同时与template使用，templateUrl不会生效
+            replace:false,        //为true时，将用template代码覆盖源代码中指令声明的部分
+
+            scope:false,         //设置为boolean型或者对象，当为true时，会从父作用域继承并创建一个新的作用域对象，见demo020,030,040
+            //scope:{},         当将scope设置为{}对象时，就是隔离作用域。当创建可复用的组件时，组件可以在未知上下文中使用，并且可以避免污染所处的外部作用域或不经意地污染内部作用域。P80，见demo050,060
+
+            f:1
+        }
+    });
+</script>
+
+</body>
+</html>

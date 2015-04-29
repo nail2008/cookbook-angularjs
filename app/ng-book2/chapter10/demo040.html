@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo04" ng-init="someProperty='some data'">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P79 指令的定义中的scope参数3</p>
+
+<div ng-init="siblingProperty='moredata'">
+    Inside Div Two:{{aThirdProperty}}
+    <div ng-init="aThirdProperty='data for 3rd property'" ng-controller="SomeController">
+        Inside Div Three:{{aThirdProperty}}
+        <div ng-controller="SecondController">
+            Inside Div Four:{{aThirdProperty}} <br/>
+            Outside myDirective:{{myProperty}}
+            <div my-directive ng-init="myProperty='wow,this is cool'">
+                Inside myDirective:{{myProperty}}
+            </div>
+        </div>
+    </div>
+</div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo04', []);
+    app.controller('SomeController', function ($scope) {
+
+    });
+    app.controller('SecondController', function ($scope) {
+
+    });
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'A',
+            scope: true     //设置为true时，会从父作用域继承，并出创建一个新的作用域对象
+        };
+    });
+</script>
+</body>
+</html>
