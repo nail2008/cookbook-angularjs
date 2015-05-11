@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <script src="app.js"></script>
+</head>
+<body ng-app="btst">
+<h3>BootStrap手风琴指令实例</h3>
+
+<btst-accordion>
+    <btst-pane title="<b>基本功能</b>" category="{name:'test'}">
+        <div>AngularJS是Google推出的一款Web应用开发框架。它提供了一系列兼容性良好并且可扩展的服务，包括数据绑定、DOM操作、MVC设计模式和模块加载等。本文专注于AngularJS 指令的使用，在我们进入主题之前，我们将快速浏览AngularJS的基本用法。</div>
+    </btst-pane>
+    <btst-pane title="<b>创建自定义指令</b>">
+        <div>使用过 AngularJS 的朋友应该最感兴趣的是它的指令。现今市场上的前端框架也只有AngularJS 拥有自定义指令的功能，并且AngularJS 是目前唯一提供Web应用可复用能力的框架。</div>
+    </btst-pane>
+    <btst-pane title="<b>体验实例</b>">
+        <div>之前我们已经介绍了所有的AngularJS 基础知识，下面让我们通过实例来加深记忆，体验自定义指令的乐趣。</div>
+    </btst-pane>
+</btst-accordion>
+</body>
+</html>
