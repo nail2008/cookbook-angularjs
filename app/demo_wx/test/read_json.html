@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<script src="../../bower_components/angular/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="CustomersController">
+    <p>
+        服务编码 SERV_ID: {{servf.SERV_ID}} <br/>
+        服务名称 SERV_NAME: {{servf.SERV_NAME}} <br/>
+        分页大小 SERV_PAGE_COUNT: {{servf.SERV_PAGE_COUNT}}
+    </p>
+
+    <table border="1px">
+        <thead>
+        <tr>
+            <th>ITEM_LIST_ORDER 排序</th>
+            <th>ITEM_CODE 字段编码</th>
+            <th>ITEM_NAME 字段名称</th>
+            <th>ITEM_TYPE 字段类型：1：表字段；2：视图字段；3：自定义字段</th>
+            <th>ITEM_MOBILE_TYPE 移动类型，1：列表标题；2：列表项；3：仅卡片项；4：列表时间；5：列表图片；9：不展示</th>
+            <th>ITEM_INPUT_TYPE 输入类型，11：静态文本(label)；1：文本框；2：下拉框；3：单选框；4：多选框；5：大文本；6：超大文本；7：文件上传；8：图片上传；
+                12：密码框；10：分组框（自定义）
+            </th>
+            <th>ITEM_INPUT_MODE 输入模式，1：无；2：查询选择；3：树形选择；4：日期选择；6：组合值</th>
+            <th>ITEM_INPUT_CONFIG 输入设置，在此设置服务名或表达式，以此服务查询下来列表数据</th>
+            <th>ITEM_INPUT_DEFAULT 缺省值</th>
+            <th>ITEM_NOTNULL 必填项 ，1：是；2：否</th>
+            <th>ITEM_READONLY 只读项 ，1：是；2：否</th>
+            <th>ITEM_HIDDEN 隐藏项 ，1：是；2：否</th>
+            <th>ITEM_FIELD_TYPE 校验设置-字段类型，STR：字符串；NUM：数字；LONG：大文本；TIME：TIMESTAME</th>
+            <th>ITEM_FIELD_LENGTH 校验设置-最大长度，数字的逗号分隔小数位</th>
+            <th>S_FLAG 启用标志，1：是；2：否</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in items">
+            <td>{{item.ITEM_LIST_ORDER}}</td>
+            <td>{{item.ITEM_CODE}}</td>
+            <td>{{item.ITEM_NAME}}</td>
+            <td>{{item.ITEM_TYPE}}</td>
+            <td>{{item.ITEM_MOBILE_TYPE}}</td>
+            <td>{{item.ITEM_INPUT_TYPE}}</td>
+            <td>{{item.ITEM_INPUT_MODE}}</td>
+            <td>{{item.ITEM_INPUT_CONFIG}}</td>
+            <td>{{item.ITEM_INPUT_DEFAULT}}</td>
+            <td>{{item.ITEM_NOTNULL}}</td>
+            <td>{{item.ITEM_READONLY}}</td>
+            <td>{{item.ITEM_HIDDEN}}</td>
+            <td>{{item.ITEM_FIELD_TYPE}}</td>
+            <td>{{item.ITEM_FIELD_LENGTH}}</td>
+            <td>{{item.S_FLAG}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+<script type="application/javascript">
+
+
+    var app = angular.module('myApp', []);
+    app.controller('CustomersController', function ($scope, $http) {
+
+        $scope.servf = {};
+        $scope.items = [];
+        $http.get("../json/CPDCP_PREHEAT_WELD_GROUP.json")
+                .success(function (response) {
+                    $scope.servf = response;
+                    $scope.items = response.SY_SERV_ITEM;
+                });
+    });
+</script>
+
+
+</body>
+</html>
