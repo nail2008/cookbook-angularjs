@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  ng-app="docsIsoFnBindExample">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src=""></script>
+</head>
+<body>
+<a href="http://www.ngnice.com/posts/1602e9e459a3a9">原帖翻译地址</a> <br/>
+<a href="https://docs.angularjs.org/guide/directive">英文原帖</a>
+<h5>创建包裹其他元素的指令</h5>
+<p>
+    Best Practice: 当你的指令想要开放一个API去绑定特定的行为，在scope配置中使用'&prop'. <br/>
+    绑定策略，本地作用域@或@attr、双向绑定=或=attr、父级作用域定&或&attr <br/>
+</p>
+
+<div ng-controller="Ctrl">
+    <my-dialog ng-hide="dialogIsHidden" on-close="dialogIsHidden = true">
+        Check out the contents, {{name}}!
+    </my-dialog>
+</div>
+
+
+<script type="application/javascript">
+    angular.module('docsIsoFnBindExample', [])
+            .controller('Ctrl', function($scope, $timeout) {
+                $scope.name = 'Tobias';
+                //这段代码在本例中好像没啥用
+                $scope.hideDialog = function () {
+                    $scope.dialogIsHidden = true;
+                    $timeout(function () {
+                        $scope.dialogIsHidden = false;
+                    }, 2000);
+                };
+            })
+            .directive('myDialog', function() {
+                return {
+                    restrict: 'E',
+                    transclude: true,
+                    scope: {
+                        'close': '&onClose'
+                    },
+                    templateUrl: 'demo090_tpl.html'
+                };
+            });
+</script>
+</body>
+</html>

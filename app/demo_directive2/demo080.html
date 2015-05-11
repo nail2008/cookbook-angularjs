@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  ng-app="docsTransclusionDirective">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src=""></script>
+</head>
+<body>
+<a href="http://www.ngnice.com/posts/1602e9e459a3a9">原帖地址</a> <br/>
+<h5>创建包裹其他元素的指令</h5>
+<p>
+   使用transclude配置来访问指令外部的作用域 <br/>
+    transclude配置改变了指令相互嵌套的方式，他使指令的内容拥有任何指令外部的作用域，而不是内部的作用域。为了实现这个，它给指令内容一次访问外部作用域的机会。 <br/>
+
+    这样的行为对于包裹内容的指令是非常有意义的。因为如果不这样的话，你就必须分别传入每个你需要使用的数据模型。如果你需要传入每个要使用的数据模型，那么你就无法做到适应各种不同内容的情况。 <br/>
+
+    Best Practice: 仅当你要创建一个包裹任意内容的指令的时候使用transclude:true。 <br/>
+</p>
+
+<div ng-controller="Ctrl">
+    <my-dialog>Check out the contents, {{name}}!</my-dialog>
+</div>
+
+
+<script type="application/javascript">
+    angular.module('docsTransclusionDirective', [])
+            .controller('Ctrl', function($scope) {
+                $scope.name = 'Tobias';
+            })
+            .directive('myDialog', function() {
+                return {
+                    restrict: 'E',
+                    transclude: true,
+                    templateUrl: 'demo070_tpl.html',
+                    link: function (element, scope) {
+                        scope.name = 'Jeff';
+                    }
+                };
+            });
+</script>
+</body>
+</html>

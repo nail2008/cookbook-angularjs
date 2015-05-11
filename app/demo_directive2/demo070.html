@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html  ng-app="docsTransclusionDirective">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src=""></script>
+</head>
+<body>
+<a href="http://www.ngnice.com/posts/1602e9e459a3a9">原帖地址</a> <br/>
+<h5>创建包裹其他元素的指令</h5>
+<p>
+   使用transclude配置来访问指令外部的作用域 <br/>
+
+</p>
+
+<div ng-controller="Ctrl">
+    <my-dialog>Check out the contents, {{name}}!</my-dialog>
+</div>
+
+
+<script type="application/javascript">
+    angular.module('docsTransclusionDirective', [])
+            .controller('Ctrl', function($scope) {
+                $scope.name = 'Tobias';
+            })
+            .directive('myDialog', function() {
+                return {
+                    restrict: 'E',
+                    transclude: true,
+                    templateUrl: 'demo070_tpl.html'
+                };
+            });
+</script>
+</body>
+</html>

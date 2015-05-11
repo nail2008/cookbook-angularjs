@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html  ng-app="docsTimeDirective">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src=""></script>
+</head>
+<body>
+<a href="http://www.ngnice.com/posts/1602e9e459a3a9">原帖地址</a> <br/>
+
+<p>Link函数：创建一个操作DOM的指令 <br/>
+    在我们的link函数中，我们更新显示时间每秒一次，或者当用户改变指定绑定的时间格式字符串的时候。我们也要移除定时器，当指令被删除的时候，以避免引入内存泄露。<br/>
+    通过监听事件，你可以移除可能引起内存泄露的事件监听器，注册在元素和作用域上的监听器在它们被移除的时候，会自动会清理掉，但是假如注册一个事件在服务或者没有被删除的DOM节点上，你就必须手工清理，否则会有内存泄露的风险。<br/>
+
+</p>
+
+<div ng-controller="Ctrl2">
+    Date format: <input ng-model="format"> <hr/>
+    Current time is: <span my-current-time="format"></span>
+</div>
+
+
+<script type="application/javascript">
+    angular.module('docsTimeDirective', [])
+            .controller('Ctrl2', function($scope) {
+                $scope.format = 'M/d/yy h:mm:ss a';
+            })
+            .directive('myCurrentTime', function($timeout, dateFilter) {
+                /**
+                 *
+                 * @param scope
+                 * @param element 指令匹配的jqLite封装的元素（ng内部实现的类jquery的库）
+                 * @param attrs 是一个带有规范化后属性名字和相应值的对象
+                 */
+                function link(scope, element, attrs) {
+                    var format,
+                            timeoutId;
+
+                    function updateTime() {
+                        element.text(dateFilter(new Date(), format));
+                    }
+
+                    scope.$watch(attrs.myCurrentTime, function(value) {
+                        format = value;
+                        updateTime();
+                    });
+
+                    /**
+                     * 利用$timeout函数，在其内调自己，并设置延时，定时重调，模拟“进程”
+                     * 其中timeoutId，相当于进程id（其实是promise的fn返回值，暂时先这样理解）
+                     */
+                    function scheduleUpdate() {
+                        // save the timeoutId for canceling
+                        timeoutId = $timeout(function() {
+                            updateTime(); // update DOM
+                            scheduleUpdate(); // schedule the next update
+                        }, 1000);
+                    }
+
+                    element.on('$destroy', function() {
+                        //cancel方法用来杀掉'进程'，点进去可以看源码
+                        $timeout.cancel(timeoutId);
+                    });
+
+                    // start the UI update process.以此来启动"进程"
+                    scheduleUpdate();
+                }
+
+                return {
+                    link: link
+                };
+            });
+</script>
+</body>
+</html>

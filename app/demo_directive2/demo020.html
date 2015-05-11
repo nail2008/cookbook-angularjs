@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  ng-app="docsSimpleDirective">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src=""></script>
+</head>
+<body>
+<a href="http://www.ngnice.com/posts/1602e9e459a3a9">原帖地址</a> <br/>
+
+<div ng-controller="Ctrl">
+    <div my-customer></div>
+</div>
+
+
+<script type="application/javascript">
+    angular.module('docsSimpleDirective', [])
+            .controller('Ctrl', function ($scope) {
+                $scope.customer = {
+                    name: 'Naomi',
+                    address: '1600 Amphitheatre'
+                };
+            })
+            .directive('myCustomer', function () {
+                return {
+                    restrict:'EA',
+                    templateUrl: 'demo020_tpl.html'
+                };
+            });
+</script>
+</body>
+</html>
