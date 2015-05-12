@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo13">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P90 ngModel</p>
+ngModel是一个用法特殊的指令，它提供更底层的API来处理控制器内的数据。这个API用来处理数据绑定、验证、CSS更新等不实际操作DOM的事情。<br/>
+注意：这个指令没有隔离作用域，想想为什么？<br/>
+
+<p>
+    <h5>ngModelController中的属性：</h5>
+<b>$viewValue</b>    保存着更新视图所需的实际字符串  <br/>
+<b>$modelValue</b>      由数据模型持有，可能跟viewValue不同，取决于$parser流水线是否对其进行了操作<br/>
+<b>$parsers</b>      是一个由函数组成的数组，其中的函数会被逐一调用，以对值进行处理和修饰<br/>
+<b>$formatters</b>      是一个由函数组成的数组，其中的函数会在数据模型的值发生变化时被逐一调用，用来对值进行格式化和转换，以便在绑定了这个值的控件中显示<br/>
+<b>$viewChangeListeners</b>      是一个由函数组成的数组，其中的函数会在视图中的值发生变化时被逐一调用。可以在无需使用$watch的情况下实现类似行为，没有返回值<br/>
+<b>$error</b>      保存着没有通过验证的验证器名称以及对应的错误信息<br/>
+<b>$pristine</b>      布尔型，告诉我们用户是否对控件进行了修改(啥意思？是表单的值改变了？)<br/>
+<b>$dirty</b>      布尔型，和$pristine相反，告诉我们用户是否和控件进行过交互<br/>
+<b>$valid</b>      布尔型，告诉我们控件中是否有错误，有错误时值为false，没有错误时为true<br/>
+<b>$invalid</b>      布尔型，跟$valid相反<br/>
+</p>
+<div ng-controller="MainController">
+    <div my-directive ng-model="object">
+
+    </div>
+</div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo13', []);
+    app.controller('MainController', function ($scope) {
+    });
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'A',
+            require:'?ngModel', //这个是必须的，否则不会获得ngModelController
+            link: function (scope,ele,attrs,ngModel) {
+                if(!ngModel)return;
+                //已获得ngModelController
+                $(function () {
+                    ele.datepicker({
+                        onSelect: function (date) {
+                            //设置视图和调用apply
+                            scope.$apply(function () {
+                                //设置作用域中的视图值
+                                ngModel.$setViewValue(date);
+                            });
+                        }
+                    });
+                });
+            }
+        };
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ngb2.chp10.demo05">
+<html ng-app="ngb2.chp10.demo05.1">
 <head lang="en">
     <meta charset="UTF-8">
     <title>第10章 指令详解</title>
@@ -7,30 +7,35 @@
 </head>
 <body>
 <p>P80 隔离作用域</p>
+<h5 style="color:red">这个例子有些问题</h5>
 
 <div ng-controller="MainController">
-    Outside myDirective:{{myProperty}}
+    Outside myDirective:{{myProperty}} <br/>
+    prop2:  {{prop2}} <br/>
+    prop3:  {{prop3}} <br/>
     <!--ngInit优先级高，会先于myDirective的生声明执行，并且它成功的传染了外面的myProperty-->
-    <div my-directive ng-init="myProperty='wow,this is cool'">
+    <div my-directive ng-init="myProperty='wow,this is cool';prop2='prop2';prop3='prop3'">
         <!--但由于myDirective内部声明后于ngInit执行，并隔离了所用域，所以里面的myProperty没有值-->
-        Inside myDirective:{{myProperty}}
+
     </div>
 </div>
 <script !src="">
-    var app = angular.module('ngb2.chp10.demo05', []);
+    var app = angular.module('ngb2.chp10.demo05.1', []);
     app.controller('MainController', function ($scope) {
-
+//        $scope.myProperty ='wow,this is cool';
+//        $scope.prop2 ='i am prop2';
+//        $scope.prop3 ='i am prop3';
     });
     app.directive('myDirective', function () {
         return {
             restrict: 'A',
-            scope: {},
+            scope: {
+            },
             //试试 将scope设置为true、false、{} 看看有什么不同
             //默认值为false，即不存在特殊的作用域设置，与父环境作用域相同
             //设置为true时，会从父作用域<b>继承</b>，并创建一个新的作用域对象
             //设置为{}对象时，则创建了隔离作用域，与外界毫不相关，如果需要继承或者传递值出去，就要在{}里设置绑定策略来控制
-            priority: 100,
-            template: '<div>Inside myDirective {{myProperty}}</div>'
+            template: '<div>Inside myDirective {{myProperty}}</div>'+'<div>prop2: {{prop2}}</div>'+'<div>prop3: {{prop3}}</div>'
         };
     });
 </script>

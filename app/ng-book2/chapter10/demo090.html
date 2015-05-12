@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo09">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P84 controller</p>
+
+
+<div my-directive>
+
+</div>
+
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo09', []);
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'A',
+            controller:'SomeController'
+        };
+    });
+    app.controller('SomeController', function ($scope,$element,$attrs,$transclude) {
+        //$scope 指令的当前作用域
+        //$element 指令对应的元素
+        //$attrs 当前元素的属性组成的json对象
+        //$transclude 嵌入链接函数，实际被执行用来克隆元素和操作DOM
+            //ng不建议在控制器内部操作DOM；如果有这个需求，请在compile参数中使用transcludeFn。
+    });
+
+</script>
+
+</body>
+</html>

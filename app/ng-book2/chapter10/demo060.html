@@ -7,6 +7,9 @@
 </head>
 <body>
 <p>P80 隔离作用域2</p>
+默认值为false，即不存在特殊的作用域设置，与父环境作用域相同 <br/>
+设置为true时，会从父作用域<b>继承</b>，并创建一个新的作用域对象 <br/>
+设置为{}对象时，则创建了隔离作用域，与外界毫不相关，如果需要继承或者传递值出去，就要在{}里设置绑定策略来控制    <br/>
 
 <div ng-init="myProperty='wow,thisiscool'">
     Surrounding scope:{{myProperty}}

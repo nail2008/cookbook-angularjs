@@ -6,13 +6,14 @@
     <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
 </head>
 <body>
-<p>P78 指令的定义中的scope参数</p>
+<p>P78 指令的定义中的scope参数：首先理解一般的作用域</p>
 
 <div ng-init="siblingProperty='moredata'">
     Inside Div Two:{{aThirdProperty}}
     <div ng-init="aThirdProperty='data for 3rd property'" ng-controller="SomeController">
         Inside Div Three:{{aThirdProperty}}
-        <div ng-init="aFourthProperty">
+        <div ng-init="aFourthProperty"> <!-- 试试改成下面这行-->
+        <!--<div ng-init="aThirdProperty='111'">-->
             Inside Div Four:{{aThirdProperty}}
         </div>
     </div>

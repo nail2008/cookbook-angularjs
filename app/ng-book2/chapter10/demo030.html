@@ -6,7 +6,7 @@
     <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
 </head>
 <body>
-<p>P78 指令的定义中的scope参数2</p>
+<p>P78 指令的定义中的scope参数：理解controller的作用域</p>
 
 <div ng-init="siblingProperty='moredata'">
     Inside Div Two:{{aThirdProperty}}
@@ -23,7 +23,7 @@
 
     });
     app.controller('SecondController', function ($scope) {
-
+        //$scope.aThirdProperty='1111';         //试试加上这一行
     });
 </script>
 </body>

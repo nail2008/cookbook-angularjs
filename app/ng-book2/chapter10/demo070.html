@@ -18,9 +18,9 @@
         return {
             restrict : 'A',
             scope: {
-                ngModel: '=',
-                onSend: '&',
-                fromName: '@'
+                ngModel: '=',   //双向绑定，既传入了参数，但如果有改变也会影响到外面的值
+                onSend: '&',    //相当于传入的参数，从父级作用域继承，在指令内修改并不会影响外面的值
+                fromName: '@'   //本地作用域内使用的局部变量
             }
         }
     });

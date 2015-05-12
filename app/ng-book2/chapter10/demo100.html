@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo10">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P85 controller</p>
+ng不建议在控制器内部操作DOM；如果有这个需求，请在compile参数中使用transcludeFn。<br/>
+指令内的controller和link函数可以互换，区别是控制器可以用来提供可在指令间复用的行为；但link无法复用，只能在指令内部使用 <br/>
+
+<p>P86 controllerAs</p>
+controllerAs看起来没啥用，但它给了我们可以在路由和指令中创建匿名控制器的强大能力。<br/>
+这种能力可以将动态的对象创建成为控制器，并且这个对象是隔离的、易于测试的。 <br/>
+
+<my-link>http://www.baidu.com</my-link>
+
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo10', []);
+    app.directive('myLink', function () {
+        return {
+            restrict: 'EA',
+            transclude:true,
+            controller:'SomeController'
+        };
+    });
+    app.controller('SomeController', function ($scope,$element,$transclude,$log) {
+        $transclude(function (clone) {
+            var a = angular.element('<a>');
+            a.attr('href',clone.text());
+            a.text(clone.text());
+            $log.info("Created new a tag in link directive");
+            $element.append(a);
+        });
+    });
+
+</script>
+
+</body>
+</html>

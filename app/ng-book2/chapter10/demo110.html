@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo11">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P86 require</p>
+require参数可以是字符串或数组，字符串为另外一个指令的名字。<br/>
+require会将控制器注入到其值所指定的指令中，并作为当前指令的link函数的第四个参数。<br/>
+
+<p>require配置中的前缀</p>
+<b>?</b>    如果再当前指令中没有找到所需要的控制器，会将null作为传给link函数的第四个参数<br/>
+<b>^</b>    指令会在上游的指令链中查找require参数所指定的控制器<br/>
+<b>?^</b>    结合以上两者<br/>
+<b>没有前缀</b> 按照名称严格查找，如果没有抛出错误，（没有也没见抛错。。。有指令没值会抛错）<br/>
+<div ng-controller="MainController">
+    <div my-directive ng-model="object">
+
+
+    </div>
+</div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo11', []);
+    app.controller('MainController', function ($scope) {
+    });
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'A',
+            require:'ngModel'
+        };
+    });
+</script>
+
+</body>
+</html>

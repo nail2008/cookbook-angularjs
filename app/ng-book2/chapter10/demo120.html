@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo12">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P87 AngularJS的生命周期</p>
+指令是整个angularJS项目中最核心的概念，所有的一切都以此展开，以此构建。<br/>
+其生命周期经历编译与链接两个阶段（如果不算HTML解析成DOM的过程的话），<br/>
+在编译阶段，ng遍历整个HTML文档并根据JavaScript中的指令定义来处理页面上声明的指令；<br/>
+而在链接阶段负责设置事件监听，将作用域和DOM进行链接。<br/>
+<br/>
+这对应了指令中最核心的两个函数：complie和link。<br/>
+同上面所讲的，complie负责对模板DOM进行转换，link负责将作用域和DOM进行链接。<br/>
+如果我们不需要操作DOM，这些指令会直接使用link函数；<br/>
+而如果需要操作DOM使用complie函数，最后会返回一个链接函数（其实是postLink），该指令中如果包含link，那这个link会被覆盖，不起作用。<br/>
+换言之，<b>complie和link不要同时用。需要转换DOM时用complie，不需要时用link。</b><br/>
+
+<p>一个不错的教程：<a href="http://angularjs.cn/A00r">http://angularjs.cn/A00r</a></p>
+<div ng-controller="MainController">
+    <div my-directive ng-model="object">
+
+    </div>
+</div>
+<script !src="">
+    var app = angular.module('ngb2.chp10.demo12', []);
+    app.controller('MainController', function ($scope) {
+    });
+    //compile函数的例子
+    app.directive('myDirective', function () {
+        return {
+            restrict: 'A',
+            require:'ngModel',
+            compile: function (tEle,tAttrs,transcludeFn) {
+                var tplEl = angular.element('<div><h2></h2></div>');
+                var h2 = tplEl.find('h2');
+                h2.attr('type',tAttrs.type);
+                h2.attr('ng-model',tAttrs.ngModel);
+                h2.val("hello");
+                tEle.replaceWith(tplEl);
+                return function (scope,ele,attrs) {
+                    //链接函数
+                }
+            }
+        };
+    });
+    //link函数的例子
+    app.directive('myLinkDirective', function () {
+        return {
+            pre: function (tElement,tAttrs,transclude) {
+                //在子元素被链接之前执行
+                //不能用来进行DOM的变形
+                //具体作用。。。还不清楚
+            },
+            post: function (scope,iElement,iAttrs,controller) {
+                //在子元素被链接之后执行
+                //可以操作DOM的变形
+                //
+            }
+        };
+    });
+    //link函数还可以这样声明：
+    app.directive('myLinkDirective2', function () {
+        return {
+            link: function (scope,ele,attrs) {
+                return{
+                    pre: function (tElement,tAttrs,transclude) {   },
+                    post: function (scope,iElement,iAttrs,controller) {   }
+                }
+            }
+        };
+    });
+</script>
+
+</body>
+</html>

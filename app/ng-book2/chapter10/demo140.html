@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp10.demo14">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第10章 指令详解</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+<p>P93 自定义验证</p>
+一个唯一性校验的例子，或者说后台验证的例子
+
+<p>
+
+    <input type="text" name="username"
+           ng-model="signup.username"
+           ng-minlength="3"
+           ng-maxlength="20"
+           ensuer-unique="username" required/>
+
+    <script !src="">
+        var app = angular.module('ngb2.chp10.demo14', []);
+        //TODO 唯一验证
+        app.directive('ensureUnique', ['$http', function ($http) {
+            return {
+                require: 'ngModel',
+                link: function (scope, ele, attrs, c) {
+                    scope.$watch(attrs.ngModel, function () {
+                        $http({
+                            method: 'POST',
+                            url: '/api/check/' + attrs.ensureUnique,
+                            data: {'field': attrs.ensureUnique}
+                        }).success(function (data, status, headers, cfg) {
+                            c.$setValidity('unique', data.isUnique);
+                        }).error(function (data, status, headers, cfg) {
+                            c.$setValidity('unique', false);
+                        });
+                    });
+                }
+            }
+        }]);
+
+    </script>
+
+</body>
+</html>
