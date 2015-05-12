@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  ng-app="dragModule">
+<html  ng-app="docsTabsExample">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -43,6 +43,7 @@
                         };
 
                         this.addPane = function(pane) {
+                            //在初次调用时 panes的长度为0，显示他；后面的只push进来，并不显示
                             if (panes.length == 0) {
                                 $scope.select(pane);
                             }
@@ -61,7 +62,7 @@
                         title: '@'
                     },
                     link: function(scope, element, attrs, tabsCtrl) {
-                        tabsCtrl.addPane(scope);
+                        tabsCtrl.addPane(scope);//在子元素里调用父指令的controller
                     },
                     templateUrl: 'demo110_pane.html'
                 };
