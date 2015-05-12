@@ -15,7 +15,7 @@
 这对应了指令中最核心的两个函数：complie和link。<br/>
 同上面所讲的，complie负责对模板DOM进行转换，link负责将作用域和DOM进行链接。<br/>
 如果我们不需要操作DOM，这些指令会直接使用link函数；<br/>
-而如果需要操作DOM使用complie函数，最后会返回一个链接函数（其实是postLink），该指令中如果包含link，那这个link会被覆盖，不起作用。<br/>
+而如果需要操作DOM使用complie函数，最后会返回一个链接函数，该指令中如果包含link，那这个link会被覆盖，不起作用。<br/>
 换言之，<b>complie和link不要同时用。需要转换DOM时用complie，不需要时用link。</b><br/>
 
 <p>一个不错的教程：<a href="http://angularjs.cn/A00r">http://angularjs.cn/A00r</a></p>
