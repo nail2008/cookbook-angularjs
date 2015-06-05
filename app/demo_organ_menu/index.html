@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="angularjs-starter">
+
+<head lang="en">
+    <title>Custom Plunker</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script>
+        var app = angular.module('angularjs-starter', []);
+        app.controller('MainCtrl', function($scope) {
+            $scope.links = [
+                {
+                    text: 'Menu Item 1',
+                    url: '#',
+                },{
+                    text: 'Menu Item 2',
+                    url: '#',
+                    submenu: [
+                        {
+                            text: 'Sub-menu Item 3',
+                            url: '#',
+                        },{
+                            text: 'Sub-menu Item 4',
+                            url: '#',
+                            submenu: [
+                                {
+                                    text: 'Sub-sub-menu Item 5',
+                                    url: '#',
+                                },{
+                                    text: 'Sub-sub-menu Item 6',
+                                    url: '#',
+                                }
+                            ]
+                        }
+                    ]
+                },{
+                    text: 'Menu Item 3',
+                    url: '#',
+                }
+            ];
+        });
+    </script>
+</head>
+
+<body ng-controller="MainCtrl">
+For <a href="http://stackoverflow.com/a/14814205/1402988">
+    http://stackoverflow.com/a/14814205/1402988</a>:
+<hr />
+<div ng-include="'partialMenu.html'" ng-init="submenu = links;"></div>
+</body>
+
+</html>

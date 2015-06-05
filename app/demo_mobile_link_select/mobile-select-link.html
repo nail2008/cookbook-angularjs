@@ -1,0 +1,17 @@
+<div class="mh-mobile-select">
+	<div class="mh-ms-overlay-content">
+		<ul>
+			<li ng-repeat="item in mslist.msoptions"><a ui-sref="{{item.href}}" ng-click="msselect(item)">{{item.name}}</a></li>
+		</ul>
+	</div>
+	<div class="mh-ms-selected">
+		<div class="mh-ms-options">
+			<ul>
+				<li>{{mslist.msoptions[mslist.hashmap[mslist.selected]].name}}</li>
+			</ul>
+		</div>
+		<div class="mh-ms-down">
+			<i class="fa fa-caret-down"></i>
+		</div>
+	</div>
+</div>

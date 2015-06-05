@@ -1,0 +1,92 @@
+@import "functions";
+
+$mh-ms-primary-color: rgb(44, 62, 80);
+$mh-ms-secondary-color: rgb(236, 240, 241);
+$mh-ms-overlay-bg: rgba(44, 62, 80, 0.8);
+$mh-ms-overlay-content-bg: rgb(236, 240, 241);
+
+.mh-mobile-select {
+	position: relative;
+	display: inline-block;
+
+	.mh-ms-overlay {
+		display: none;
+	}
+
+	ul {
+		margin: 0;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.mh-ms-selected {
+		background-color: $mh-ms-primary-color;
+		color: $mh-ms-secondary-color;
+
+		ul {
+			margin-right: rem-calc(20px);
+
+			li {
+				padding: {
+					top: rem-calc(4px);
+					bottom: rem-calc(5px);
+					left: rem-calc(5px);
+					right: rem-calc(5px);
+				}
+			}
+		}
+
+		.mh-ms-options {
+			display: table-cell;
+		}
+
+		.mh-ms-down {
+			width: rem-calc(20px);
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+/**
+ * The Overlay
+ */
+.mh-ms-overlay-background {
+	display: none;
+	background-color: $mh-ms-overlay-bg;
+	width: 100%;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mh-ms-overlay-content {
+	display: none;
+	background-color: $mh-ms-overlay-content-bg;
+	color: white;
+	width: 90%;
+	z-index: 101;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+
+	ul {
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			padding: {
+				top: rem-calc(4px);
+				bottom: rem-calc(5px);
+				left: rem-calc(5px);
+				right: rem-calc(5px);
+			}
+		}
+	}
+
+	
+}

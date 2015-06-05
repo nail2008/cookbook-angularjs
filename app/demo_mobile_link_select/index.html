@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="myApp" class="no-js" lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Select</title>
+    <link data-require="foundation@*" data-semver="5.0.0" rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.0.0/css/normalize.css" />
+    <link data-require="foundation@*" data-semver="5.0.0" rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.0.0/css/foundation.min.css" />
+
+    <link rel="stylesheet" href="mobile-select-link.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
+    <script src="//cdn.jsdelivr.net/angular.ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+    <script src="mobile-select-link.js"></script>
+    <script src="app.js"></script>
+    <!--
+    Font Awesome
+    -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="row" ng-controller="MainController" >
+      <div class="small-12 columns">
+        <div mh-mobile-select-link mslist="myselect"></div>
+        <div mh-mobile-select-link mslist="myselect2"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <div ui-view="content"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

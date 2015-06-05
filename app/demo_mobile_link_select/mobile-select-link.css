@@ -1,0 +1,68 @@
+.mh-mobile-select {
+  position: relative;
+  display: inline-block;
+}
+.mh-mobile-select .mh-ms-overlay {
+  display: none;
+}
+.mh-mobile-select ul {
+  margin: 0;
+}
+.mh-mobile-select ul li {
+  list-style-type: none;
+}
+.mh-mobile-select .mh-ms-selected {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+.mh-mobile-select .mh-ms-selected ul {
+  margin-right: 1.25rem;
+}
+.mh-mobile-select .mh-ms-selected ul li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+}
+.mh-mobile-select .mh-ms-selected .mh-ms-options {
+  display: table-cell;
+}
+.mh-mobile-select .mh-ms-selected .mh-ms-down {
+  width: 1.25rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**
+ * The Overlay
+ */
+.mh-ms-overlay-background {
+  display: none;
+  background-color: rgba(44, 62, 80, 0.8);
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mh-ms-overlay-content {
+  display: none;
+  background-color: #ecf0f1;
+  color: white;
+  width: 90%;
+  z-index: 101;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.mh-ms-overlay-content ul {
+  margin: 0;
+}
+.mh-ms-overlay-content ul li {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+}

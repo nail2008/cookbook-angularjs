@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="link in submenu">
+        <a href="{{link.url}}">{{link.text}}</a>
+        <div ng-switch on="link.submenu.length &gt; 0">
+            <div ng-switch-when="true">
+                <div ng-init="submenu = link.submenu;" ng-include="'partialMenu.html'"></div>
+            </div>
+        </div>
+    </li>
+</ul>
