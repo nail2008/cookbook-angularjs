@@ -1,4 +1,6 @@
-# cookbook-angularjs 基于angular-seed的angular学习试验代码集合
+# cookbook-angularjs 
+
+基于angular-seed的angular学习试验代码集合
 
 ## Getting Started
 
