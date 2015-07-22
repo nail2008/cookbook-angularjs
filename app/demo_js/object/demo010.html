@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>call 和 apply</p>
+<script type="application/javascript">
+    var someuser = {
+        name:'byvoid',
+        display: function (words) {
+            console.log(this.name+' says '+words);
+        }
+    };
+
+    var foo ={
+        name:'foobar'
+    }
+
+    someuser.display.call(foo,'hello');
+    someuser.display.apply(foo,['hi']);
+
+    foo.func1 = someuser.display.bind(foo,'bindhello');
+    foo.func1();        //重复调用时使用bindperson
+    foo.func1();
+    foo.func1();
+    foo.func1();
+
+
+</script>
+</body>
+</html>

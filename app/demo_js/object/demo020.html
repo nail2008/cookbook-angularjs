@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>NodeJs规范推荐的定义对象的方式</p>
+<script type="application/javascript">
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.friends = ["Shelby", "Court"];
+    }
+
+    Person.prototype.sayName = function () {
+        alert(this.name);
+    };
+</script>
+</body>
+</html>

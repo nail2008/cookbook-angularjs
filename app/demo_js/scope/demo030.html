@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>注意JavaScript作用域搜索顺序</p>
+<p>在console.log函数访问scope变量时，javascript会先搜索函数f的作用域，搜到了，所以global的scope就被屏蔽掉了<br/>
+但执行console.log的时候，scope还没有被定义，所以得到的就是undefined。
+</p>
+<script>
+    var scope = 'global';
+    var f = function () {
+        console.log(scope);
+        var scope = 'f';        //加上这行，输出undefined
+    };
+    f();
+</script>
+</body>
+</html>

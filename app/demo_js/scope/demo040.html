@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>函数作用域的嵌套</p>
+<script>
+    var f = function () {
+        var scope = 'f0';
+        (function () {
+            var scope = 'f1';
+            (function () {
+                console.log(scope);
+            })();
+        })();
+    };
+    f();
+</script>
+
+<p>静态作用域（词法作用域），作用域的嵌套关系可以在语法分析时确定，不必等到运行时确定。</p>
+<script>
+    var scope = 'top';
+    var f1 = function () {
+        console.log(scope);
+    };
+    f1();
+
+    var f2 = function () {
+        var scope = 'f2';
+        f1();
+    };
+    f2();
+</script>
+
+<p>全局作用域 Node.js对应global对象</p>
+</body>
+</html>

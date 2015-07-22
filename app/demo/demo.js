@@ -277,6 +277,7 @@ app.controller('MainController', function ($rootScope, $scope) {
         { name: 'Nicolás',   email: 'nicolas@email.com',    age: 43, country: 'Colombia' }
     ];
 
+
     $scope.availableColors = ['Red','Green','Blue','Yellow','Magenta','Maroon','Umbra','Turquoise'];
 
     $scope.consData.colors = ['Blue','Red'];

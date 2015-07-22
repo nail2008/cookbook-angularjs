@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>闭包</p>
+<p>严格定义：由函数（环境）及其封闭的自由变量组成的集合体</p>
+<script type="application/javascript">
+//    简单定义
+var generateClosure = function () {
+    var count=0;
+    var get = function () {
+        count++;
+        return count;
+    };
+    return get;
+};
+    var counter1 = generateClosure();
+    var counter2 = generateClosure();
+    console.log(counter1());
+    console.log(counter2());
+    console.log(counter1());
+    console.log(counter1());
+    console.log(counter2());
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>动态原型模式</p>
+<script type="application/javascript">
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        if(typeof this.sayName!="function"){
+            Person.prototype.sayName = function(){
+                alert(this.name);
+            };
+        }
+    }
+
+    var person = new Person("Nicholas", 29, "Engineer");
+    person.sayName();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="ngb2.chp9.demo02">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第9章 内置指令</title>
+    <script type="text/javascript" src="../../bower_components/angular/angular.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>-->
+</head>
+<body>
+<p>P59 在指令中使用子作用域</p>
+
+<p>最佳实践：JavaScript对象中字符串、数字和布尔型变量是值复制，对象、数组和函数是引用复制。应使用后者来进行$scope变量声明，已保值双向绑定的一致。如下$scope.someModel.someValue</p>
+
+<div ng-controller="SomeController">
+    {{ someValue }}
+    <button ng-click="someAction()">Communicate to child</button>
+    <div ng-controller="ChildController">
+        {{ someValue }}
+        <button ng-click="childAction()">Communicate to parent</button>
+    </div>
+</div>
+<script>
+    var app = angular.module('ngb2.chp9.demo02', [])
+            .controller('SomeController', function ($scope) {
+                // best practice, always use a model
+                $scope.someValue='hello computer';
+                $scope.someAction = function () {
+                    $scope.someValue = 'hello human, from parent';
+                };
+            })
+            .controller('ChildController', function ($scope) {
+                $scope.childAction = function () {
+                    $scope.someValue = 'hello human, from child';
+                };
+            });
+</script>

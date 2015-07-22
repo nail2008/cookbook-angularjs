@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>组合使用构造函数模式和原型模式<br/>
+    创建自定义类型的最常见方式。构造函数用于定义实例属性，原型模式用于定义方法和共享的属性。</p>
+<script type="application/javascript">
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.friends = ["Shelby", "Court"];
+    }
+
+    Person.prototype = {
+        constructor: Person,
+        sayName: function () {
+            alert(this.name);
+        }
+    }
+
+    var person1 = new Person("Nicholas", 29, "Engineer");
+    var person2 = new Person("Greg", 27, "Doctor");
+
+    person1.friends.push("Van");
+    alert(person1.friends);
+    alert(person2.friends);
+    alert(person1.friends === person2.friends);
+    alert(person1.sayName === person2.sayName);
+
+
+</script>
+</body>
+</html>
