@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>闭包</p>
+<script type="application/javascript">
+    (function () {
+        var n = "ime";
+        function Person(name) {
+            var _this = {};
+            _this._name = name;
+            _this.sayHello = function () {
+                alert("PHello" + _this._name + n);
+            };
+            return _this;
+        }
+        window.Person = Person;
+    }());
+
+    function Teacher(name) {
+        var _this = Person(name);
+        var superSay = _this.sayHello;
+        _this.sayHello = function () {
+            superSay.call(_this);
+            alert("THello" + _this._name);
+        }
+        return _this;
+    }
+
+    var t = Teacher("iwen");
+    t.sayHello();
+
+</script>
+</body>
+</html>

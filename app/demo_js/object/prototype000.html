@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>原型模式的问题：<br/>
+    引用类型的属性将会被“污染”。原型模式的最大问题是由其共享的本性所导致的。</p>
+<script type="application/javascript">
+    function Person() {
+    }
+
+    Person.prototype = {
+        constructor: Person,
+        name : "Nicholas",
+        age : 29,
+        job : "Engineer",
+        friends : ["Shelby", "Court"],//数组是一个引用类型
+        sayName : function () {
+            alert(this.name);
+        }
+    }
+
+    var person1 = new Person();
+    var person2 = new Person();
+
+    person1.friends.push("Van");
+    person1.name = "GG";
+    alert(person1.friends);
+    alert(person2.friends);
+    alert(person1.name);
+    alert(person2.name);
+    alert(person1.friends === person2.friends);//true
+    alert(person1.sayName === person2.sayName);
+
+
+</script>
+</body>
+</html>
