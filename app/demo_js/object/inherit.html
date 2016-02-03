@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>继承</p>
+<script type="application/javascript">
+    function People(){
+    }
+    People.prototype.say = function () {
+        alert("hello");
+    }
+    function Student(){
+    }
+
+    Student.prototype = new People();
+    var s1 = new Student();
+    s1.say();//继承
+    Student.prototype.say = function(){ //复写
+        alert("stu-hello");
+    }
+    var s2 = new Student();
+    s2.say();
+
+</script>
+</body>
+</html>
