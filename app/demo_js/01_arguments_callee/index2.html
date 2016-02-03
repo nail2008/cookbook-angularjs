@@ -8,8 +8,8 @@
            inner();
         }
         function inner(){
-            alert(arguments.caller);
-           //alert(arguments.callee.caller);
+           // alert(arguments.caller);
+           alert(arguments.callee.caller);
         }
         outer();
     </script>
